@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-1: #252B4F;
+    --color-2: #9280B4;
+    --color-3: #E5BFEB;
+    --color-4: #FEE3F5;
+    --color-5: #947EB6;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    background: linear-gradient(to top, #505DAC, #4B57A0, #465194, #404B89, #3B447D, #303866, #2A315B, #252B4F, #252B4F);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 40em;
+    background-color: #252B4F;
+    overflow-y: hidden;
+}
+
+.logo{
+    width: 13em;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+    gap: 30px;
+}
+
+.header-link{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.header-link:hover{
+    color: #E5BFEB;
+}
+
+.header-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #E5BFEB;
+    transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.header-link:hover::after{
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.container-main{
+    margin-bottom: 7em;
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    width: 60em;
+    border-bottom: 0.2em solid #E5BFEB;
+}
+
+.container-about{
+    display: flex;
+    gap: 30em;
+}
+
+.text-about{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.text-about h1{
+    margin-top: 5%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-about p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.strong-about{
+    color: #E5BFEB;
+}
+
+.foto-portfolio{
+    margin-top: 4em;
+    margin-left: 4em;
+    width: 90em;
+    height: 30em;
+    border-radius: 2em;
+}
+
+.container-mid{
+    width: 100%;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+.border-mid{
+    display: flex;
+    justify-content: center;
+    width: 60em;
+    margin-left: 40em;
+    border-bottom: 0.2em solid #E5BFEB;
+}
+
+.container-services{
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    gap: 20em;
+}
+
+.logo-services{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;
+    width: 12em;
+    height: 17em;
+    padding: 1em 1em 1em 1em;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.logo-services:hover{
+    box-shadow: 1em 2em 1em 0.1em;
+    border: 1px solid #E5BFEB;
+}
+
+.btn-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 20px;
+}
+
+.image-services{
+    width: 8em;
+}
+
+span{
+    font-size: 2rem;
+}
