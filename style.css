@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -17,27 +17,31 @@
 }
 
 body{
-    font-family: 'Archivo', sans-serif;
-    background: linear-gradient(to top, #505DAC, #4B57A0, #465194, #404B89, #3B447D, #303866, #2A315B, #252B4F, #252B4F);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC);
 }
 
 .header{
     display: flex;
     justify-content: center;
-    gap: 40em;
-    background-color: #252B4F;
     overflow-y: hidden;
+    position: fixed;
+    gap: 4em;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0% 10% 0% 7%;
+    background-color: #505DAC;
 }
 
 .logo{
-    width: 13em;
+    width: 100%;
 }
 
 .header-menu{
     display: flex;
     align-items: center;
-    padding: 1% 1% 1% 1%;
-    gap: 30px;
+    gap: 2em;
 }
 
 .header-link{
@@ -68,6 +72,7 @@ body{
 }
 
 .container-main{
+    margin-top: 11em;
     margin-bottom: 7em;
 }
 
@@ -80,12 +85,15 @@ body{
 
 .container-about{
     display: flex;
-    gap: 30em;
+    gap: 20em;
 }
 
 .text-about{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 3.6em;
     gap: 2em;
 }
 
@@ -97,7 +105,7 @@ body{
 }
 
 .text-about p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 300;
     color: #fff;
 }
@@ -109,9 +117,8 @@ body{
 .foto-portfolio{
     margin-top: 4em;
     margin-left: 4em;
-    width: 90em;
-    height: 30em;
-    border-radius: 2em;
+    width: 100%;
+    border-radius: 20em;
 }
 
 .container-mid{
@@ -137,19 +144,24 @@ body{
 
 .logo-services{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     overflow-y: hidden;
-    width: 12em;
+    cursor: pointer;
+    gap: 1em;
+    width: 17em;
     height: 17em;
     padding: 1em 1em 1em 1em;
-    border-radius: 1em;
+    border-radius: 30em;
+    border: 0.2em solid #E5BFEB;
     transition: 0.5s;
 }
 
 .logo-services:hover{
-    box-shadow: 1em 2em 1em 0.1em;
-    border: 1px solid #E5BFEB;
+    background-color: #E5BFEB;
+    color: #252B4F;
 }
 
 .btn-services{
@@ -163,8 +175,83 @@ body{
 
 .image-services{
     width: 8em;
+    transition: 0.5s;
 }
 
-span{
+.logo-services:hover .image-services{
+    filter: brightness(0%);
+}
+
+.logo-services span{
+    transition: 0.5s;
     font-size: 2rem;
+    color: #fff;
+}
+
+.logo-services:hover span{
+    color: #000;
+}
+
+.container-bottom{
+    margin-top: 4em;
+}
+
+.border-project{
+    width: 60em;
+    border-top: 1px solid #E5BFEB;
+}
+
+.container-projects{
+    margin-top: 40em;
+}
+
+.text-project h1{
+    font-size: 7rem;
+    color: #fff;
+}
+
+.baseboard{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2em;
+    background-color: #E5BFEB;
+}
+
+.baseboard-link{
+    text-decoration: none;
+    font-size: 600;
+    color: black;
+}
+
+@media(max-width: 1200px){
+    
+    .logo{
+        width: auto;
+    }
+
+    .container-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10em;
+    }
+
+    .foto-portfolio{
+        margin: 0;
+        width: 100%;
+    }
+
+    .text-about{
+        margin-right: 1em;
+        margin-left: 3em;
+    }
+
+    .container-services{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10em;
+    }
 }
