@@ -40,7 +40,7 @@ body{
 .header-menu{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .header-link{
@@ -108,10 +108,17 @@ body{
 }
 
 .strong-about{
-    color: #d486e0;
+    color: #fff;
 }
 
 .foto-portfolio{
+    border: 0.5em solid #fff;
+    border-radius: 20em;
+    margin-right: 2em;
+    width: 80em;
+}
+
+.foto{
     width: 100%;
     height: 100%;
     border-radius: 20em;
@@ -201,6 +208,7 @@ body{
     display: inline-block;
     position: relative;
     overflow-y: hidden;
+    border-radius: 0.1em;
     border: 0.5em solid #fff;
     height: 20em;
     width: 22em;
