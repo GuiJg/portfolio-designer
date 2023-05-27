@@ -54,6 +54,7 @@
         </div>
     </section>
     <div class="border-mid"></div>
+    <!-- <img src="assets/wavesNegative.svg" alt="" width="100%" height="100em"> -->
     <section class="container-bottom" id="projects">
         <div class="text-title-project">
             <h1>PROJETOS</h1>
@@ -61,19 +62,23 @@
         <div class="border-project"></div>
         <div class="container-projects">
             <div class="project">
-                <img src="assets/aire-mockupbag.png" alt="Logo da Aire skin em uma sacola de compras" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/aire-mockupbag.png" alt="Logo da Aire skin em uma sacola de compras" class="image-project1">
+                </div>
                 <div class="text-project">
                     <h3>AIRE SKIN</h3>
                 </div>
             </div>
             <div class="project">
-                <img src="assets/aire-logo.jpg" alt="logomarca do projeto aire" class="image-project">
+                    <img src="assets/aire-logo.jpg" alt="logomarca do projeto aire" class="image-project">
                 <div class="text-project">
                     <h3>AIRE SKIN</h3>
                 </div>
             </div>
             <div class="project">
-                <img src="assets/mockup-hidratante-sabonete-esfoliante.jpg" alt="Mockup em hidratante, sabonete e um esfoliante" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/mockup-hidratante-sabonete-esfoliante.jpg" alt="Mockup em hidratante, sabonete e um esfoliante" class="image-project1">
+                </div>
                 <div class="text-project">
                     <h3>AIRE SKIN</h3>
                 </div>
@@ -86,21 +91,26 @@
                 </div>
             </div>
             <div class="project">
-                <img src="assets/docenique-cartao.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/docenique-cartao.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project1">
+                </div> 
                 <div class="text-project">
                     <h3>DOCENIQUE</h3>
                 </div>
             </div>
             <div class="project">
-                <img src="assets/Insta.mockup..jpg" alt="Mockup em hidratante sabonete e um esfoliante" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/Insta.mockup..jpg" alt="Mockup em hidratante sabonete e um esfoliante" class="image-project1">
+                </div> 
                 <div class="text-project">
                     <h3>DOCENIQUE</h3>
                 </div>
             </div>
-        </div>
-        <div class="container-projects">
             <div class="project">
-                <img src="assets/TulipGrden-instagram.jpg" alt="Mockup do branding no instagram" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/TulipGrden-instagram.jpg" alt="Mockup do branding no 
+                    instagram" class="image-project1">
+                </div>
                 <div class="text-project">
                     <h3>TULIP GARDEN</h3>
                 </div>
@@ -112,7 +122,9 @@
                 </div>
             </div>
             <div class="project">
-                <img src="assets/Tulip-box.jpg" alt="Mockup no instagram" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/Tulip-box.jpg" alt="Mockup no instagram" class="image-project1">
+                </div>
                 <div class="text-project">
                     <h3>TULIP GARDEN</h3>
                 </div>
@@ -121,7 +133,33 @@
     </section>
     <section class="container-fot" id="contact">
         <div class="container-contact">
+            <div>
+                <div class="text-media">
+                    <h3>VAMOS CONVERSAR!</h3>
 
+                    <p>Quer fazer um agendamento ou entrar em contato? Me mande um E-mail!
+                    </p>
+                    
+                    <h3>ACESSE MINHAS REDES SOCIAIS</h3>
+                </div>    
+                <div class="container-btn">
+                    <a href="https://www.instagram.com/cynthia.designss/" target="_blank" class="btn-contact"><img src="assets/instagram-icon.png" alt="icone do instagram" class="btn-image" style="width: 4.2em;"></a>
+                    <a href="https://www.behance.net/cynthiasantos8" target="_blank" class="btn-contact"><img src="assets/behance-icon.png" alt="Icone do Behance" class="btn-image" style="width: 5em"></a>
+                    <a href="https://www.linkedin.com/in/cynthia-dos-santos-rodrigues-de-paula-1a3270195/" target="_blank" class="btn-contact"><img src="assets/linkedin-icon.png" alt="Icone do LinkedIn" class="btn-image" style="width: 4em; margin-left: 0.6em;"></a>
+                </div>
+            </div>
+            <div class="container-form">
+                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+                    <input type="hidden" name="_next" value="https://guijg.github.io/Portfolio">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer class="baseboard">Desenvolvido por<strong class="baseboard-link">José Guilherme</strong></footer>

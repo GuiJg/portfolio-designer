@@ -104,11 +104,13 @@ body{
 .text-about p{
     font-size: 1.1rem;
     font-weight: 400;
+
+    margin-right: 11%;
     color: #343d6e;
 }
 
 .strong-about{
-    color: #fff;
+    color: #CB7ED7;
 }
 
 .foto-portfolio{
@@ -186,20 +188,21 @@ body{
 .logo-services:hover span{
     color: #fff;
 }
- 
+
 .container-bottom{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #252B4F;
+    background: #343d6e;
     margin-top: 4em;
-    gap: 2em;
 }
 
 .container-projects{
     display: grid;
     overflow-y: hidden;
     grid-template-columns: repeat(3, auto);
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 70em;
     gap: 2em;
 }
@@ -243,6 +246,25 @@ body{
     font-weight: 400;
 }
 
+.container-image-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.image-project1{
+    width: 30em;
+    height: 19.3em;
+    transition: 0.5s;
+}
+
+.image-project1:hover{
+    filter: brightness(70%);
+    scale: 1.1;
+}
+
+
 .image-project{
     width: 100%;
     height: 100%;
@@ -262,6 +284,131 @@ body{
     font-family: 'Futura', sans-serif;
     font-size: 4rem;
     color: #fff;
+}
+
+.container-fot{
+    background: #343d6e;
+}
+
+.container-contact{
+    display: flex;
+    margin: 5% 7%;
+    gap: 4em;
+}
+
+.text-media{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #fff;
+}
+
+.text-media h3{
+    font-size: 2.5rem;
+}
+
+.text-media p{
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}   
+
+.container-btn{
+    display: flex;
+    margin-top: 5%;
+    gap: 1em;
+}
+
+.btn-contact{
+    width: 5em;
+    transition: 0.5s;
+}
+
+.btn-contact:hover{
+    filter: brightness(60%);
+}
+
+.btn-image{
+    width: 100%;
+    
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    width: 99%;
+}
+
+.form label{
+    color: #fff;
+    line-height: 1;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    border: 0.1em solid transparent;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    padding: 0.8rem;
+    transition: border-color 0.5s;
+    transition: 0.5s;
+    box-shadow: 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    filter: brightness(90%);
+    /* box-shadow: inset 1em 0.5em var(--color-3); */
+    box-shadow: 0.1em 0.1em 0.1em 0.1em var(--color-3);
+}
+
+.form button{
+    display: flex;
+    justify-content: center;    
+    background: transparent;   
+    text-transform: uppercase;   
+    cursor: pointer;
+    color: #fff;
+    border: 0.1em solid ;
+    border-radius: 2em;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.form button:hover{
+    border: none;
+    color: #252B4F;
+    background: var(--color-3);
+}
+
+.formu{
+    font-size: 3rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.formu::before{
+    display: block;
 }
 
 .baseboard{
@@ -287,7 +434,7 @@ body{
     }
 
     .header-link{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .logo{
@@ -299,7 +446,7 @@ body{
         flex-direction: column;
         align-items: center;
         text-align: start;
-        gap: 10em;
+        margin: 5% 7%;
     }
 
     .foto-portfolio{
@@ -308,21 +455,40 @@ body{
     }
 
     .text-about{
-        margin-left: 10%;
+        margin: 0;
     }
 
     .text-about h2{
-        font-size: 3rem;
+        font-size: 2rem;
+        margin: 0;
     }
 
     .text-about p{
         font-size: 1.3rem;
+        margin: 0;
     }
 
     .container-services{
         flex-direction: column;
         align-items: center;
         height: auto;
-        gap: 10em;
+        gap: 5em;
     }
+
+    .text-title-project{
+        font-size: 2.1rem;
+    }
+
+    .container-projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 25%;
+        height: 15em;
+    }
+
+    
 }
