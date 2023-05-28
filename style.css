@@ -407,14 +407,13 @@ button {
     color: #fff;
 }
 
-.division{
-    background: url(assets/division.svg);
-    height: 4em;
-}
+/* .division{
+    
+    
+} */
 
 .container-fot{
-    background: #343d6e;
-    background: url(assets/background-contact.svg);
+    background: linear-gradient(to top, #e0a9e9, #6470b5 ,#3f4a85, #343d6e);
 }
 
 .container-contact{
@@ -465,7 +464,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -524,8 +523,7 @@ button {
 
 .form button:hover{
     border: none;
-    color: #252B4F;
-    background: var(--color-3);
+    background: #343d6e;
 }
 
 .formu{
@@ -548,7 +546,7 @@ button {
     width: 100%;
     padding: 1.5em;
     gap: 0.3em;
-    background-color: #E5BFEB;
+    background-color: #e0a9e9   ;
 }
 
 .baseboard-link{
