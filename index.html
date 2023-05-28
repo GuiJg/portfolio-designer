@@ -18,7 +18,6 @@
     </nav>
 </header>
 <body>
-    
     <section class="container-main" id="about">
         <div class="container-about">
             <div class="foto-portfolio">
@@ -33,11 +32,19 @@
                 <p>
                     Os designs não precisam apenas parecer bonitos: uma boa identidade de marca vem da estratégia e do propósito. E é exatamente assim que vamos criar o branding dos seus sonhos!
                 </p>
+                <button class="learn-more">
+                    <a href="about.html"> 
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Saiba Mais</span>
+                    </a>
+                </button>
             </div>
         </div>
     </section>
     <div class="border"></div>
-    <section class="container-mid" id="services">
+    <section class="container-mid hidden" id="services">
         <div class="container-services">
             <div class="logo-services"> 
                 <img src="assets/logomarca.png" alt="Icone de uma lampa com design de uma logo marca" class="image-services">
@@ -54,7 +61,6 @@
         </div>
     </section>
     <div class="border-mid"></div>
-    <!-- <img src="assets/wavesNegative.svg" alt="" width="100%" height="100em"> -->
     <section class="container-bottom" id="projects">
         <div class="text-title-project">
             <h1>PROJETOS</h1>
@@ -70,7 +76,9 @@
                 </div>
             </div>
             <div class="project">
+                <div class="container-image-project">
                     <img src="assets/aire-logo.jpg" alt="logomarca do projeto aire" class="image-project">
+                </div>
                 <div class="text-project">
                     <h3>AIRE SKIN</h3>
                 </div>
@@ -85,7 +93,9 @@
             </div>
         
             <div class="project">
-                <img src="assets/LOGO.jpg" alt="logomarca do projeto docenique" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/LOGO.jpg" alt="logomarca do projeto docenique" class="image-project">
+                </div>
                 <div class="text-project">
                     <h3>DOCENIQUE</h3>
                 </div>
@@ -116,7 +126,9 @@
                 </div>
             </div>
             <div class="project">
-                <img src="assets/tulip-garden-logo.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project">
+                <div class="container-image-project">
+                    <img src="assets/tulip-garden-logo.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project">
+                </div>
                 <div class="text-project">
                     <h3>TULIP GARDEN</h3>
                 </div>
@@ -129,11 +141,36 @@
                     <h3>TULIP GARDEN</h3>
                 </div>
             </div>
-        </div>
+            <div class="project">
+                <div class="container-image-project">
+                    <img src="assets/qservices-logo.png" alt="Mockup da docenique feita em cartões de visitas" class="image-project1">
+                </div>
+                <div class="text-project">
+                    <h3>Q SERVICES</h3> 
+                </div>
+            </div>
+            <div class="project">
+                <div class="container-image-project">
+                    <img src="assets/qservices-cartao.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project1">
+                </div>
+                <div class="text-project">
+                    <h3>Q SERVICES</h3> 
+                </div>
+            </div>
+            <div class="project">
+                <div class="container-image-project">
+                    <img src="assets/kit-qservices.jpg" alt="Mockup da docenique feita em cartões de visitas" class="image-project1">
+                </div>
+                <div class="text-project">
+                    <h3>Q SERVICES</h3> 
+                </div>
+            </div>
+        </div>    
     </section>
+    <div class="division"></div>
     <section class="container-fot" id="contact">
         <div class="container-contact">
-            <div>
+            <div style="margin-top: 20%; margin-bottom: 5%;">
                 <div class="text-media">
                     <h3>VAMOS CONVERSAR!</h3>
 
@@ -143,9 +180,9 @@
                     <h3>ACESSE MINHAS REDES SOCIAIS</h3>
                 </div>    
                 <div class="container-btn">
-                    <a href="https://www.instagram.com/cynthia.designss/" target="_blank" class="btn-contact"><img src="assets/instagram-icon.png" alt="icone do instagram" class="btn-image" style="width: 4.2em;"></a>
-                    <a href="https://www.behance.net/cynthiasantos8" target="_blank" class="btn-contact"><img src="assets/behance-icon.png" alt="Icone do Behance" class="btn-image" style="width: 5em"></a>
-                    <a href="https://www.linkedin.com/in/cynthia-dos-santos-rodrigues-de-paula-1a3270195/" target="_blank" class="btn-contact"><img src="assets/linkedin-icon.png" alt="Icone do LinkedIn" class="btn-image" style="width: 4em; margin-left: 0.6em;"></a>
+                    <a href="https://www.instagram.com/cynthia.designss/" target="_blank" class="btn-contact"><img src="assets/instagram-icon.png" alt="icone do instagram" class="btn-image" style="width: 3em;"></a>
+                    <a href="https://www.behance.net/cynthiasantos8" target="_blank" class="btn-contact"><img src="assets/behance-icon.png" alt="Icone do Behance" class="btn-image" style="width: 3.7em"></a>
+                    <a href="https://www.linkedin.com/in/cynthia-dos-santos-rodrigues-de-paula-1a3270195/" target="_blank" class="btn-contact"><img src="assets/linkedin-icon.png" alt="Icone do LinkedIn" class="btn-image" style="width: 3em; margin-left: 0.6em;"></a>
                 </div>
             </div>
             <div class="container-form">
@@ -162,8 +199,11 @@
             </div>
         </div>
     </section>
-    <footer class="baseboard">Desenvolvido por<strong class="baseboard-link">José Guilherme</strong></footer>
-    <script src="script.js"></script>
+    <footer class="baseboard">Desenvolvido por 
+        <strong>
+            <a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="baseboard-link">José Guilherme</a>
+        </strong>
+    </footer>
     <!-- vlibras plugin -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -176,5 +216,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <!--  vlibras plugin -->
+    <script src="script.js"></script> 
 </body>
 </html>
