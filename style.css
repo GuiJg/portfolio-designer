@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root{
@@ -16,11 +17,9 @@
 }
 
 body{
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to top, #fff, #fff , #faf0ff, #faf0ff
     , #e09bff);
-    /* background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC); */
 }
 
 ::-webkit-scrollbar{
@@ -48,7 +47,6 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
-  
 
 .header{
     display: flex;
@@ -94,6 +92,20 @@ body{
 }
 
 .container-main{
+    display: flex;
+    justify-content: center;
+}
+
+/* .banner{
+    
+} */
+
+.atelie-logo{
+    width: 100em;
+    height: 70em;
+}
+
+.container-top{
     margin-top: 4em;
     margin-bottom: 7em;
 }
@@ -125,7 +137,7 @@ body{
     font-family: 'Futura', sans-serif;
     margin-top: 5%;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #343d6e;
 }
 
@@ -165,14 +177,14 @@ button {
     font-family: inherit;
     border: 0;
     padding: 0; 
-   }
+}
    
-   button.learn-more {
+button.learn-more {
     width: 12rem;
-    height: auto;
-   }
+    height: 3.1em;
+}
    
-   button.learn-more .circle {
+button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -181,26 +193,26 @@ button {
     height: 3rem;
     background: #343d6e;
     border-radius: 1.625rem;
-   }
+}
    
-   button.learn-more .circle .icon {
+button.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     background: #fff;
-   }
+}
    
-   button.learn-more .circle .icon.arrow {
+button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
-   }
+}
    
-   button.learn-more .circle .icon.arrow::before {
+button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.29rem;
@@ -210,9 +222,9 @@ button {
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
     transform: rotate(45deg);
-   }
+}
    
-   button.learn-more .button-text {
+button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -226,20 +238,21 @@ button {
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
-   }
+}
    
-   button:hover .circle {
+button:hover .circle {
     width: 100%;
-   }
+}
    
-   button:hover .circle .icon.arrow {
+button:hover .circle .icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
-   }
+}
    
-   button:hover .button-text {
+button:hover .button-text {
     color: #fff;
-   }
+}
+
 .container-mid{
     width: 100%;
     margin-top: 5%;
@@ -257,8 +270,11 @@ button {
 .container-services{
     display: flex;
     justify-content: center;
+    align-items: center;
+    cursor: context-menu;
+    overflow-y: hidden;
     width: 100%;
-    height: 100%;
+    height: 16em;
     gap: 15em;
 }
 
@@ -325,6 +341,7 @@ button {
     display: inline-block;
     position: relative;
     overflow-y: hidden;
+    cursor: pointer;
     border-radius: 0.2em;
     border: 0.4em solid #fff;
     height: 20em;
@@ -448,7 +465,7 @@ button {
 }
 
 .btn-contact{
-    width: 3em;
+    width: 5em;
     transition: 0.5s;
 }
 
@@ -485,6 +502,7 @@ button {
     font: inherit;
     border: 0.1em solid transparent;
     border-radius: 2em;
+    margin-top: 0.3em;
     margin-bottom: 1em;
     padding: 0.8rem;
     transition: border-color 0.5s;
@@ -522,7 +540,7 @@ button {
 }
 
 .form button:hover{
-    border: none;
+    border: 0.1em solid #343d6e;
     background: #343d6e;
 }
 
@@ -537,6 +555,30 @@ button {
 
 .formu::before{
     display: block;
+}
+
+.btn-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 89%;
+    left: 95.2%;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 2em;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.btn-home:hover{
+    background-color: #d579ff;
+    scale: 1.1;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em ;
+}
+
+.img-seta{
+    width: 2em;
 }
 
 .baseboard{
@@ -607,9 +649,6 @@ button {
     .text-title-project{
         margin-top: 6.5em;
         font-size: 1.8rem;
-    }
-
-    .container-bottom{
     }
 
     .container-projects{

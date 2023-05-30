@@ -10,3 +10,15 @@ window.addEventListener('scroll', function() {
     hasBeenRevealed = true; // Atualiza a variável para indicar que a classe foi revelada
   }
 });
+
+window.addEventListener('scroll', function(){
+
+  const button = document.querySelector('.btn-home');
+  let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 100) {
+    button.style.opacity = '1';
+  } else {
+    button.style.opacity = '0';
+  }
+});

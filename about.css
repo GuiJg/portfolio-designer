@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #fff, #fff , #faf0ff, #faf0ff, #faf0ff, #d068ff);
+    height: 200em;
+    /* background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC); */
+}
+
+::-webkit-scrollbar{
+    background-color: #faf0ff;
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 0.2em;
+    background: #da8aff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #d579ff;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    gap: 38em;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    width: 100%;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #343d6e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.header-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #343d6e;
+    transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(-0%);
+}
+
+.header-link:hover::after{
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.container-main{
+    margin-top: 3em;
+    margin-bottom: 7em;
+}
+
+.border{
+    display: flex;
+    justify-content: start;
+    width: 50%;
+    border-bottom: 0.2em solid #e0a9e9;
+}
+
+.container-about{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    gap: 5em;
+}
+
+.text-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.text-about h1{
+    font-family: 'Futura', sans-serif;
+    margin-top: 5%;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #343d6e;
+}
+
+.text-about p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 20%;
+    color: #343d6e;
+}
+
+.strong-about{
+    font-weight: 500;
+    color: #ffffffec;
+}
+
+.foto-portfolio{
+    position: relative;
+    display: inline-block;
+    overflow-y: hidden;
+    margin-right: 3em;
+    width: 90em;
+}
+
+.foto{
+    border: 0.5em solid #fff;
+    position: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20em;
+} 
+
+.tulip{
+    position: absolute;
+    width: 10em;
+    top: 88%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
