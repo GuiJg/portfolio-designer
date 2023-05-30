@@ -343,7 +343,7 @@ button:hover .button-text {
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
-    background-image: url(/assets/background-project.svg);
+    background-image: url(./assets/background-project.svg);
 }
 
 .container-projects{
