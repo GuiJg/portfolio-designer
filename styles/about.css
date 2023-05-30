@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #fff, #fff , #faf0ff, #faf0ff, #faf0ff, #d068ff);
+    height: 200em;
+    /* background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC); */
+}
+
+::-webkit-scrollbar{
+    background-color: #faf0ff;
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 0.2em;
+    background: #da8aff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #d579ff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 38em;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.logo{
+    width: 100%;
+    max-width: 200px;
+}
+
+.logo-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-3lines{
+    width: 2.1em;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #343d6e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.header-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #343d6e;
+    transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(-0%);
+}
+
+.header-link:hover::after{
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.menu-button{
+    display: none;
+    height: 2.5em;
+    font-size: 1.5rem;
+}
+
+.container-main{
+    margin-top: 3em;
+    margin-bottom: 7em;
+}
+
+.border{
+    display: flex;
+    justify-content: start;
+    width: 50%;
+    border-bottom: 0.2em solid #e0a9e9;
+}
+
+.container-about{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.text-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.text-about h1{
+    font-family: 'Futura', sans-serif;
+    margin-top: 5%;
+    font-size: 3.5rem;
+    color: #343d6e;
+}
+
+.text-about p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 20%;
+    color: #343d6e;
+}
+
+.strong-about{
+    font-weight: 500;
+    color: #ffffffec;
+}
+
+.foto-portfolio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-y: hidden;
+    width: 90em;
+}
+
+.foto{
+    border: 0.5em solid #fff;
+    position: block;
+    width: 80%;
+    border-radius: 20em;
+} 
+
+.tulip{
+    position: absolute;
+    width: 6em;
+    top: 88%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 89%;
+    left: 95.2%;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 2em;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.btn-home:hover{
+    background-color: #d579ff;
+    scale: 1.1;
+    /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
+    box-shadow: inset 1em 0.5em #d579ff;
+}
+
+.img-seta{
+    width: 2em;
+}
+
+.baseboard{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.5em;
+    gap: 0.3em;
+    background-color: #e0a9e9;
+}
+
+.baseboard-link{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media(max-width: 700px){
+
+    .header{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header-menu{
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+    }
+      
+    .header-menu.active{
+        display: flex;
+    }
+      
+    .menu-button{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background: none;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .header-link{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        width: auto;
+    }
+
+    .container-about{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        gap: 6em;
+        margin: 5% 7%;
+    }
+
+    .foto-portfolio{
+        margin: 0;
+        width: 100%;
+    }
+
+    .text-about{
+        margin: 0;
+    }
+
+    .text-about h1{
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .text-about p{
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .strong-about{
+        color: #d579ff;
+    }
+
+    .tulip{
+        left: 25%;
+        width: 3.3em;
+    }
+    .btn-home{
+        width: 3em;
+        height: 3em;
+        left: 80%;
+    }
+
+    .img-seta{
+        width: 1.3em;
+    }
+
+    .baseboard{
+        font-size: 1rem;
+        padding: 1.4em;
+    }
+}

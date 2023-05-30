@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="assets/CynthiaDesignss-favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
 <header class="header" id="home">
-    <a href="index.html"><img src="assets/CynthiaDesignss-logo.png" alt="Logo da designer Cynthia dos santos" class="logo"></a>
+    <div class="logo-button">
+        <a href="index.html"><img src="assets/CynthiaDesignss-logo.png" alt="Logo da designer Cynthia dos santos" class="logo"></a>
+        <button class="menu-button">
+            <img src="assets/3-lines.png" alt="três linhas representando o menu do cabeçalho" class="img-3lines">
+        </button>
+    </div>
     <nav class="header-menu">
         <a href="#about" class="header-link">Sobre</a>
         <a href="#services" class="header-link">Serviços</a>
@@ -171,7 +176,10 @@
                     <h3>Q SERVICES</h3> 
                 </div>
             </div>
-        </div>    
+        </div>   
+        <div class="button-project">
+            <a href="project.html" class="button-content">Mais Projetos</a>
+        </div> 
     </section>
     <!-- <div class="division"></div> -->
     <section class="container-fot" id="contact">
@@ -192,7 +200,7 @@
                 </div>
             </div>
             <div class="container-form">
-                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
+                <form action="https://formsubmit.co/cynthia.spaulaa@gmail.com" method="POST" class="form">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
                     <label for="email">Email</label>

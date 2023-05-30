@@ -50,20 +50,32 @@ body{
 
 .header{
     display: flex;
-    justify-content: center;
-    overflow-y: hidden;
+    justify-content: space-evenly;
     gap: 38em;
     top: 0;
     left: 0;
     right: 0;
+    padding: 1em;
 }
 
 .logo{
     width: 100%;
+    max-width: 200px;
+}
+
+.logo-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-3lines{
+    width: 2.1em;
 }
 
 .header-menu{
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 2em;
 }
@@ -89,6 +101,12 @@ body{
 .header-link:hover::after{
     width: 100%;
     transform: translateX(0%);
+}
+
+.menu-button{
+    display: none;
+    height: 2.5em;
+    font-size: 1.5rem;
 }
 
 .container-main{
@@ -153,6 +171,7 @@ body{
 }
 
 .foto-portfolio{
+    display: flex;
     border: 0.5em solid #fff;
     border-radius: 20em;
     margin-right: 2em;
@@ -161,7 +180,6 @@ body{
 
 .foto{
     width: 100%;
-    height: 100%;
     border-radius: 20em;
 } 
 
@@ -324,7 +342,8 @@ button:hover .button-text {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: url(assets/background-project.svg);
+    overflow-y: hidden;
+    background-image: url(/assets/background-project.svg);
 }
 
 .container-projects{
@@ -400,7 +419,6 @@ button:hover .button-text {
 .image-project1:hover{
     filter: brightness(70%);
     scale: 1.1;
-    
 }
 
 .image-project{
@@ -424,10 +442,51 @@ button:hover .button-text {
     color: #fff;
 }
 
-/* .division{
-    
-    
-} */
+.button-project{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin: 1em;
+    width: 8em;
+    height: 3em;  
+    transition: 0.5s;
+    background-color: #d068ff;
+}
+
+.button-content{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1;
+}
+
+.button-project:hover{
+    scale: 1.1;                  
+}
+
+.button-project:hover::before{
+    transform: scaleX(1);
+}
+
+.button-project::before{
+    content: "";
+    position: absolute;
+    height: inherit;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    background: linear-gradient(to left, #c546ff, #b513ff, #9900df);
+    transition: all 0.5s;
+}
 
 .container-fot{
     background: linear-gradient(to top, #e0a9e9, #6470b5 ,#3f4a85, #343d6e);
@@ -574,7 +633,8 @@ button:hover .button-text {
 .btn-home:hover{
     background-color: #d579ff;
     scale: 1.1;
-    box-shadow: 0.1em 0.1em 0.1em 0.1em ;
+    /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
+    box-shadow: inset 1em 0.5em #d579ff;
 }
 
 .img-seta{
@@ -597,11 +657,28 @@ button:hover .button-text {
     color: #000;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 700px){
 
     .header{
-        gap: 0em;
-        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header-menu{
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+    }
+      
+    .header-menu.active{
+        display: flex;
+    }
+      
+    .menu-button{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        transition: 0.5s;
     }
 
     .header-link{
@@ -630,7 +707,7 @@ button:hover .button-text {
     }
 
     .text-about h2{
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 0;
     }
 
@@ -663,6 +740,7 @@ button:hover .button-text {
     }
 
     .container-contact{
+        margin: 1em;
         flex-direction: column;
     }
     
@@ -674,8 +752,18 @@ button:hover .button-text {
     .form input,
     .form textarea,
     .form button {
-    width: 15em;
-}
+    width: 100%;
+    }
+
+    .btn-home{
+        width: 3em;
+        height: 3em;
+        left: 80%;
+    }
+
+    .img-seta{
+        width: 1.3em;
+    }
 
     .baseboard{
         font-size: 1rem;

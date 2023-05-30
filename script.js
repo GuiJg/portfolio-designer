@@ -22,3 +22,10 @@ window.addEventListener('scroll', function(){
     button.style.opacity = '0';
   }
 });
+
+const menuButton = document.querySelector('.menu-button');
+const headerMenu = document.querySelector('.header-menu');
+
+  menuButton.addEventListener('click', function() {
+    headerMenu.classList.toggle('active');
+  });
