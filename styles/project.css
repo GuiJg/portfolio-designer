@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -16,10 +16,11 @@
     --color-5: #947EB6;
 }
 
+
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #fff, #fff , #faf0ff, #faf0ff
-    , #e09bff);
+    background: #3B447D;
+    /* background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC); */
 }
 
 ::-webkit-scrollbar{
@@ -34,18 +35,6 @@ body{
 
 ::-webkit-scrollbar-thumb:hover{
     background: #d579ff;
-}
-
-
-.hidden{
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; 
-    transform: translateY(20px);
-}
-  
-.hidden.visible{
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .header{
@@ -82,7 +71,7 @@ body{
 
 .header-link{
     text-decoration: none;
-    color: #343d6e;
+    color: #fff;
     font-size: 1.6rem;
     font-weight: 400;
     transition: 0.5s;
@@ -93,7 +82,7 @@ body{
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #343d6e;
+    background-color: #fff;
     transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
     transform: translateX(-0%);
 }
@@ -109,25 +98,6 @@ body{
     font-size: 1.5rem;
 }
 
-.container-main{
-    display: flex;
-    justify-content: center;
-}
-
-/* .banner{
-    
-} */
-
-.atelie-logo{
-    width: 100em;
-    height: 70em;
-}
-
-.container-top{
-    margin-top: 4em;
-    margin-bottom: 7em;
-}
-
 .border{
     display: flex;
     justify-content: start;
@@ -135,225 +105,25 @@ body{
     border-bottom: 0.2em solid #e0a9e9;
 }
 
-.container-about{
-    display: flex;      
-    justify-content: center;
-    align-items: center;
-    margin-left: 3em;
-    margin-right: 3em;
-    gap: 5em;
-}
-
-.text-about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
-}
-
-.text-about h2{
-    font-family: 'Futura', sans-serif;
-    margin-top: 5%;
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: #343d6e;
-}
-
-.text-about p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-right: 11%;
-    color: #343d6e;
-}
-
-.strong-about{
-    color: #ffffffec;
-}
-
-.foto-portfolio{
-    display: flex;
-    border: 0.5em solid #fff;
-    border-radius: 20em;
-    margin-right: 2em;
-    width: 80em;
-}
-
-.foto{
-    width: 100%;
-    border-radius: 20em;
-} 
-
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    font-size: inherit;
-    font-family: inherit;
-    border: 0;
-    padding: 0; 
-}
-   
-button.learn-more {
-    width: 12rem;
-    height: 3.1em;
-}
-   
-button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #343d6e;
-    border-radius: 1.625rem;
-}
-   
-button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-}
-   
-button.learn-more .circle .icon.arrow {
-    overflow-x: visible;
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
-   
-button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-}
-   
-button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #343d6e;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-}
-   
-button:hover .circle {
-    width: 100%;
-}
-   
-button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-}
-   
-button:hover .button-text {
-    color: #fff;
-}
-
-.container-mid{
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.border-mid{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin-left: 40em;
-    border-bottom: 0.2em solid #e0a9e9;
-}
-
-.container-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: context-menu;
-    overflow-y: hidden;
-    width: 100%;
-    height: 16em;
-    gap: 15em;
-}
-
-.logo-services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;
-    text-decoration: none;
-    gap: 1em;
-    width: 13em;
-    height: 13em;
-    padding: 1em 1em 1em 1em;
-    border-radius: 30em;
-    border: 0.2em solid #e0a9e9;
-    transition: 0.5s;
-}
-
-.logo-services:hover{
-    background-color: #e0a9e9;
-    color: #fff;
-    scale: 1.1;
-}
-
-.image-services{
-    width: 5em;
-    transition: 0.5s;
-    filter: brightness(0%);
-}
-
-.logo-services:hover .image-services{
-    filter: brightness(100%);
-}
-
-.logo-services span{
-    transition: 0.5s;
-    font-size: 1.5rem;
-    color: #343d6e;
-}
-
-.logo-services:hover span{
-    color: #fff;
-}
-
 .container-bottom{
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
+    gap: 3em;
     background-image: url(/assets/background-project.svg);
 }
 
+.container-bottom h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+
 .container-projects{
-    display: grid;
+    display: flex;
     overflow-y: hidden;
     grid-template-columns: repeat(3, auto);
-    margin-top: 8%;
-    margin-bottom: 5%;
     width: 70em;
     gap: 2em;
 }
@@ -370,9 +140,6 @@ button:hover .button-text {
     transition: 0.5s;
 }
 
-/* .project:hover{
-    scale: 1.1;
-} */
 
 .border-project{
     width: 50%;
@@ -442,52 +209,6 @@ button:hover .button-text {
     font-family: 'Futura', sans-serif;
     font-size: 4rem;
     color: #fff;
-}
-
-.button-project{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1em;
-    margin: 1em;
-    width: 8em;
-    height: 3em;  
-    transition: 0.5s;
-    background-color: #d068ff;
-}
-
-.button-content{
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    z-index: 1;
-}
-
-.button-project:hover{
-    scale: 1.1;                  
-}
-
-.button-project:hover::before{
-    transform: scaleX(1);
-}
-
-.button-project::before{
-    content: "";
-    position: absolute;
-    height: inherit;
-    border-radius: inherit;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    background: linear-gradient(to left, #c546ff, #b513ff, #9900df);
-    transition: all 0.5s;
 }
 
 .container-fot{
@@ -650,13 +371,12 @@ button:hover .button-text {
     width: 100%;
     padding: 1.5em;
     gap: 0.3em;
-    background-color: #e0a9e9   ;
+    background-color: #e0a9e9;
 }
 
 .baseboard-link{
     text-decoration: none;
     font-weight: 600;
-    color: #000;
 }
 
 @media(max-width: 700px){
@@ -680,6 +400,8 @@ button:hover .button-text {
         display: flex;
         align-items: center;
         justify-content: end;
+        background: none;
+        border: none;
         transition: 0.5s;
     }
 
@@ -689,72 +411,6 @@ button:hover .button-text {
 
     .logo{
         width: auto;
-    }
-
-    .container-about{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: start;
-        margin: 5% 7%;
-    }
-
-    .foto-portfolio{
-        margin: 0;
-        width: 90%;
-    }
-
-    .text-about{
-        margin: 0;
-    }
-
-    .text-about h2{
-        font-size: 3rem;
-        margin: 0;
-    }
-
-    .text-about p{
-        font-size: 1.3rem;
-        margin: 0;
-    }
-
-    .container-services{
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 5em;
-    }
-
-    .text-title-project{
-        margin-top: 6.5em;
-        font-size: 1.8rem;
-    }
-
-    .container-projects{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project{
-        width: 25%;
-        height: 15em;
-    }
-
-    .container-contact{
-        margin: 1em;
-        flex-direction: column;
-    }
-    
-    .container-form{
-        margin: 0;
-    }
-
-    .form label,
-    .form input,
-    .form textarea,
-    .form button {
-    width: 100%;
     }
 
     .btn-home{
