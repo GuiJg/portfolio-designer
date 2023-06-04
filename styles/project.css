@@ -13,14 +13,13 @@
     --color-2: #9280B4;
     --color-3: #E5BFEB;
     --color-4: #FEE3F5;
-    --color-5: #947EB6;
+    --color-5: #947EB6; 
 }
 
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: #3B447D;
-    /* background: linear-gradient(to top, #252B4F, #303866, #353E72, #3B447D, #404B89, #465194, #4B57A0, #505DAC, #505DAC); */
+    background: linear-gradient(to top, #343d6e ,#343d6e , #3f4a85, #6470b5);
 }
 
 ::-webkit-scrollbar{
@@ -105,18 +104,17 @@ body{
     border-bottom: 0.2em solid #e0a9e9;
 }
 
-.container-bottom{
+.container-main{
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
-    gap: 3em;
-    background-image: url(/assets/background-project.svg);
 }
 
-.container-bottom h2{
+.container-main h2{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    margin-bottom: 2em;
     font-size: 2rem;
 }
 
@@ -124,8 +122,9 @@ body{
     display: flex;
     overflow-y: hidden;
     grid-template-columns: repeat(3, auto);
+    margin-bottom: 4em;
     width: 70em;
-    gap: 2em;
+    gap: 1em;
 }
 
 .project{
@@ -150,7 +149,7 @@ body{
 .text-title-project{
     display: flex;
     color: #fff;
-    margin-top: 4em;
+    margin-top: 1.5em;
     font-size: 3rem;
 }
 
