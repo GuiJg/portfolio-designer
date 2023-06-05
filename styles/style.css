@@ -124,8 +124,8 @@ body{
 }
 
 .container-top{
-    margin-top: 4em;
-    margin-bottom: 7em;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .border{
@@ -272,10 +272,28 @@ button:hover .button-text {
     color: #fff;
 }
 
+.division{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20em;
+    background-color: #d068ff;
+}
+
+.division h1{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.img-div{
+    width: 20%;
+    filter: brightness(30%);
+}
+
 .container-mid{
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 7%;
+    margin-bottom: 0%;
 }
 
 .border-mid{
@@ -305,9 +323,10 @@ button:hover .button-text {
     text-align: center;
     overflow-y: hidden;
     text-decoration: none;
+    position: relative;
     gap: 1em;
-    width: 13em;
-    height: 13em;
+    width: 14em;
+    height: 14em;
     padding: 1em 1em 1em 1em;
     border-radius: 30em;
     border: 0.2em solid #e0a9e9;
@@ -317,7 +336,38 @@ button:hover .button-text {
 .logo-services:hover{
     background-color: #e0a9e9;
     color: #fff;
-    scale: 1.1;
+    transform: scale(1.1);
+}
+
+.description{
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Futura', sans-serif; 
+    font-weight: 600;
+    font-size: 1.01rem;
+    padding-right: 1em;
+    padding-left: 1em;
+    opacity: 0;
+    width: 1em;
+    height: 0.1em;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+}
+
+.logo-services:hover .description{
+    opacity: 1;
+    transition-delay: 0s;
+    width: 100%;
+    height: auto;
+}
+
+.logo-services:hover .image-services,
+.logo-services:hover span{
+    opacity: 0;
+    transform: opacity 0.5s;
 }
 
 .image-services{
@@ -353,7 +403,7 @@ button:hover .button-text {
     overflow-y: hidden;
     grid-template-columns: repeat(3, auto);
     margin-top: 8%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     width: 70em;
     gap: 2em;
 }
@@ -447,12 +497,9 @@ button:hover .button-text {
 .button-project{
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    border: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border: none; 
     border-radius: 1em;
     margin: 1em;
     width: 8em;
@@ -462,14 +509,18 @@ button:hover .button-text {
 }
 
 .button-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     text-decoration: none;
     color: #fff;
-    z-index: 1;
+    width: 8em;
+    height: 3em;  
 }
 
 .button-project:hover{
-    scale: 1.1;                  
+    scale: 1.04;                  
 }
 
 .button-project:hover::before{
