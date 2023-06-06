@@ -112,16 +112,17 @@ body{
 }
 
 .container-main h2{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    margin-bottom: 2em;
+    margin: 0.3em;
+    margin-bottom: 5%;
     font-size: 2rem;
 }
 
 .container-projects{
     display: flex;
     overflow-y: hidden;
-    grid-template-columns: repeat(3, auto);
     margin-bottom: 4em;
     width: 70em;
     gap: 1em;
@@ -344,15 +345,23 @@ body{
     align-items: center;
     position: fixed;
     top: 89%;
-    left: 95.2%;
+    left: 95%;
+    width: 4em;
+    height: 4em;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d5f2;
     width: 3.5em;
     height: 3.5em;
     border-radius: 2em;
     transition: 0.5s;
-    background-color: #fff;
 }
 
-.btn-home:hover{
+.btn:hover{
     background-color: #d579ff;
     scale: 1.1;
     /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
@@ -362,7 +371,6 @@ body{
 .img-seta{
     width: 2em;
 }
-
 .baseboard{
     display: flex;
     justify-content: center;
@@ -375,6 +383,7 @@ body{
 
 .baseboard-link{
     text-decoration: none;
+    color: #000;
     font-weight: 600;
 }
 
@@ -409,12 +418,48 @@ body{
     }
 
     .logo{
-        width: auto;
+        width: 80%;
+    }
+
+    .container-main h1{
+        font-size: 3rem;
+    }
+
+    .container-main h2{
+        margin-bottom: 15%;
+        font-size: 1.7rem;
+    }
+
+    .container-projects{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .project{
+        width: 25%;
+        height: 15em;
+    }
+
+    .container-contact{
+        margin: 1em;
+        flex-direction: column;
+    }
+    
+    .container-form{
+        margin: 0;
+    }
+
+    .form label,
+    .form input,
+    .form textarea,
+    .form button {
+    width: 100%;
     }
 
     .btn-home{
-        width: 3em;
-        height: 3em;
+        width: 4em;
+        height: 4em;
         left: 80%;
     }
 

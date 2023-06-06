@@ -13,7 +13,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function(){
 
-  const button = document.querySelector('.btn-home');
+  const button = document.querySelector('.btn');
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition > 100) {

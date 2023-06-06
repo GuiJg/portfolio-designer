@@ -45,6 +45,7 @@ body{
   
 .hidden.visible{
     opacity: 1;
+    transition: 0.5s;
     transform: translateY(0);
 }
 
@@ -62,6 +63,10 @@ body{
     width: 100%;
     max-width: 200px;
 }
+
+/* .logo-responsive{
+    background-image: url(../assets/ICON\ ROCO\ LETRA\ ROXO\ ESCURO.png);
+} */
 
 .logo-button{
     display: flex;
@@ -114,10 +119,6 @@ body{
     justify-content: center;
 }
 
-/* .banner{
-    
-} */
-
 .atelie-logo{
     width: 100em;
     height: 70em;
@@ -125,7 +126,7 @@ body{
 
 .container-top{
     margin-top: 4%;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 
 .border{
@@ -282,6 +283,7 @@ button:hover .button-text {
 
 .division h1{
     color: #fff;
+    padding: 0.1em;
     font-size: 3.5rem;
 }
 
@@ -291,9 +293,21 @@ button:hover .button-text {
 }
 
 .container-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100%;
     margin-top: 7%;
     margin-bottom: 0%;
+}
+
+.container-mid h1{
+    border-bottom: 0.2rem solid #e0a9e9;
+    color: #e383f1;
+    font-size: 3rem;
+    width: 50%;
+    margin-bottom: 3%;
 }
 
 .border-mid{
@@ -383,7 +397,7 @@ button:hover .button-text {
 .logo-services span{
     transition: 0.5s;
     font-size: 1.5rem;
-    color: #343d6e;
+    color: #3f4a85;
 }
 
 .logo-services:hover span{
@@ -426,7 +440,7 @@ button:hover .button-text {
 
 .border-project{
     width: 50%;
-    border-top: 1px solid #e0a9e9;
+    border-top: 0.1em solid #e0a9e9;
     color: #f0ceff;
 }
 
@@ -675,15 +689,23 @@ button:hover .button-text {
     align-items: center;
     position: fixed;
     top: 89%;
-    left: 95.2%;
+    left: 95%;
+    width: 4em;
+    height: 4em;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d5f2;
     width: 3.5em;
     height: 3.5em;
     border-radius: 2em;
     transition: 0.5s;
-    background-color: #fff;
 }
 
-.btn-home:hover{
+.btn:hover{
     background-color: #d579ff;
     scale: 1.1;
     /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
@@ -739,7 +761,7 @@ button:hover .button-text {
     }
 
     .logo{
-        width: auto;
+        width: 80%;
     }
 
     .container-about{
@@ -752,7 +774,7 @@ button:hover .button-text {
 
     .foto-portfolio{
         margin: 0;
-        width: 90%;
+        width: 100%;
     }
 
     .text-about{
@@ -767,6 +789,16 @@ button:hover .button-text {
     .text-about p{
         font-size: 1.3rem;
         margin: 0;
+    }
+
+    .division h1{
+        font-size: 2.4rem;
+    }
+    
+    .container-mid h1{
+        width: 80%;
+        margin-bottom: 20%;
+        font-size: 2.5rem;
     }
 
     .container-services{
@@ -809,8 +841,8 @@ button:hover .button-text {
     }
 
     .btn-home{
-        width: 3em;
-        height: 3em;
+        width: 4em;
+        height: 4em;
         left: 80%;
     }
 
