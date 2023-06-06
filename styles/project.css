@@ -118,6 +118,7 @@ body{
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
+    margin-top: 7%;  
 }
 
 .container-main h2{
