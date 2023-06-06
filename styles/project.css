@@ -51,6 +51,11 @@ body{
     max-width: 200px;
 }
 
+.logo-horizontal{
+    width: 20em; 
+    margin: 1em
+}
+
 .logo-button{
     display: flex;
     align-items: center;
@@ -116,6 +121,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin: 0.3em;
+    margin-top: 2%;
     margin-bottom: 5%;
     font-size: 2rem;
 }
@@ -419,6 +425,10 @@ body{
 
     .logo{
         width: 80%;
+    }
+
+    .logo-horizontal{
+        width: 15em;
     }
 
     .container-main h1{
