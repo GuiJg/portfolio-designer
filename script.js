@@ -21,34 +21,54 @@ const headerMenu = document.querySelector('.header-menu');
 let service = document.getElementById("services")
 let project = document.getElementById("projects")
 let contact = document.getElementById("contact")
+let text = document.getElementById("text")
+let title = document.getElementById("title")
 
   window.addEventListener("scroll", function(){
     const sectionTop = service.getBoundingClientRect().top;
     const sectionMid = project.getBoundingClientRect().top;
     const sectionBot = contact.getBoundingClientRect().top;
+    const sectionDiv = text.getBoundingClientRect().top;
+    const sectionTitle = text.getBoundingClientRect().top;
     const windowHeight=window.innerHeight;
 
     if(sectionTop < windowHeight){
-      service.classList.add("active");
+      service.classList.add("ativa");
     }
 
     else{
-      service.classList.remove("active");
+      service.classList.remove("ativa");
     }
     
     if(sectionMid < windowHeight){
-      project.classList.add("active");
+      project.classList.add("ativa");
     }
 
     else{
-      project.classList.remove("active");
+      project.classList.remove("ativa");
     }
 
     if(sectionBot < windowHeight){
-      contact.classList.add("active");
+      contact.classList.add("ativa");
     }
 
     else{
-      contact.classList.remove("active");
+      contact.classList.remove("ativa");
+    }
+
+    if(sectionDiv < windowHeight){
+      text.classList.add("ativa");
+    }
+
+    else{
+      text.classList.remove("ativa");
+    }
+
+    if(sectionTitle < windowHeight){
+      title.classList.add("ativa");
+    }
+
+    else{
+      title.classList.remove("ativa");
     }
   });

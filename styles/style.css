@@ -36,16 +36,28 @@ body{
     background: #d579ff;
 }
 
-#services, #projects, #contact{
+#services, #projects, #contact, #title{
     opacity: 0;
-    transition: opacity 1s ease;
-    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateY(50px);
 }
 
-#services.active,
-#projects.active,
-#contact.active{
-    transform: translateY(0px);
+#text{ 
+    opacity: 0;
+    transition: opacity 1s ease, transform 1.5s ease;
+    transform: translateX(100px);
+}
+
+#text.ativa{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#services.ativa,
+#projects.ativa,
+#contact.ativa,
+#title.ativa{
+    transform: translateY(0);
     opacity: 1;
 }
 
@@ -437,13 +449,16 @@ button:hover .button-text {
 } */
 
 .border-project{
-    width: 50%;
+    width: 10em;
     border-top: 0.1em solid #e0a9e9;
     color: #f0ceff;
 }
 
 .text-title-project{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     color: #fff;
     margin-top: 4em;
     font-size: 3rem;
@@ -500,9 +515,9 @@ button:hover .button-text {
     opacity: 1;
 }
 
-.text-project h1{
+.text-project h3{
     font-family: 'Futura', sans-serif;
-    font-size: 4rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
