@@ -153,7 +153,7 @@ body{
     display: flex;      
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 3%;
     margin-right: 3%;
     gap: 5em;
@@ -339,7 +339,7 @@ button:hover .button-text {
     cursor: context-menu;
     overflow-y: hidden;
     width: 100%;
-    height: 16em;
+    height: 30em;
     gap: 15em;
 }
 
@@ -352,11 +352,11 @@ button:hover .button-text {
     overflow-y: hidden;
     text-decoration: none;
     position: relative;
-    gap: 1em;
-    width: 14em;
-    height: 14em;
+    gap: 1.2em;
+    width: 17em;
+    height: 25em;
     padding: 1em 1em 1em 1em;
-    border-radius: 30em;
+    border-radius: 1.4em;
     border: 0.2em solid #e0a9e9;
     transition: 0.5s;
 }
@@ -368,7 +368,6 @@ button:hover .button-text {
 }
 
 .description{
-    position: absolute;
     overflow: hidden;
     text-align: center;
     font-family: 'Futura', sans-serif; 
@@ -376,26 +375,9 @@ button:hover .button-text {
     font-size: 1.01rem;
     padding-right: 1em;
     padding-left: 1em;
-    opacity: 0;
-    width: 1em;
-    height: 0.1em;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s, visibility 0s linear 0.5s;
-}
-
-.logo-services:hover .description{
-    opacity: 1;
-    transition-delay: 0s;
-    width: 100%;
-    height: auto;
-}
-
-.logo-services:hover .image-services,
-.logo-services:hover span{
-    opacity: 0;
-    transform: opacity 0.5s;
+    width: 15em;
+    transition: 0.5s;
+    color: #3f4a85;
 }
 
 .image-services{
@@ -404,8 +386,10 @@ button:hover .button-text {
     filter: brightness(0%);
 }
 
-.logo-services:hover .image-services{
+.logo-services:hover .image-services,
+.logo-services:hover .description{
     filter: brightness(100%);
+    color: #fff;
 }
 
 .logo-services span{
