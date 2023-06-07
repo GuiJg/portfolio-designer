@@ -1,16 +1,3 @@
-let hasBeenRevealed = false; // Variável de controle para verificar se a classe já foi revelada
-
-window.addEventListener('scroll', function() {
-  const section = document.getElementById('services');
-  const sectionPosition = section.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (sectionPosition < windowHeight / 2 && !hasBeenRevealed) {
-    section.classList.remove('hidden');
-    hasBeenRevealed = true; // Atualiza a variável para indicar que a classe foi revelada
-  }
-});
-
 window.addEventListener('scroll', function(){
 
   const button = document.querySelector('.btn');
@@ -28,4 +15,40 @@ const headerMenu = document.querySelector('.header-menu');
 
   menuButton.addEventListener('click', function() {
     headerMenu.classList.toggle('active');
+  });
+
+
+let service = document.getElementById("services")
+let project = document.getElementById("projects")
+let contact = document.getElementById("contact")
+
+  window.addEventListener("scroll", function(){
+    const sectionTop = service.getBoundingClientRect().top;
+    const sectionMid = project.getBoundingClientRect().top;
+    const sectionBot = contact.getBoundingClientRect().top;
+    const windowHeight=window.innerHeight;
+
+    if(sectionTop < windowHeight){
+      service.classList.add("active");
+    }
+
+    else{
+      service.classList.remove("active");
+    }
+    
+    if(sectionMid < windowHeight){
+      project.classList.add("active");
+    }
+
+    else{
+      project.classList.remove("active");
+    }
+
+    if(sectionBot < windowHeight){
+      contact.classList.add("active");
+    }
+
+    else{
+      contact.classList.remove("active");
+    }
   });
