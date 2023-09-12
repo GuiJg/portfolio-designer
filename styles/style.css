@@ -133,11 +133,72 @@ body{
     transform: translateX(0%);
 }
 
-.menu-button{
-    display: none;
-    height: 2.5em;
-    font-size: 1.5rem;
+.icon-menu{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    gap: var(--gap);    
+    width: 35px;
+    padding: 1%;
+    --gap: 5px;
+    --height-bar: 2.5px;
+    --pos-y-bar-one: 0;
+    --pos-y-bar-three: 0;
+    --scale-bar: 1;
+    --rotate-bar-one: 0;
+    --rotate-bar-three: 0;
 }
+  
+.bar{
+    position: relative;
+    height: var(--height-bar);
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+  
+  
+.bar--1{
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+    height: 3px;
+}
+  
+  
+.bar--2{
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+    height: 3px;
+}
+  
+  
+.bar--3{
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+    height: 3px;
+}
+  
+  
+.check-icon:checked + .icon-menu > .bar--1{
+    transition: top 200ms, transform 200ms 100ms;
+}
+  
+  
+.check-icon:checked + .icon-menu > .bar--3{
+    transition: bottom 200ms, transform 200ms 100ms;
+}
+  
+  
+.check-icon:checked + .icon-menu{
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
+}  
 
 .container-main{
     display: flex;
@@ -181,6 +242,7 @@ body{
 .text-about h2{
     font-family: 'Futura', sans-serif;
     margin-top: 5%;
+    height: 4em;
     font-size: 3.5rem;
     font-weight: 600;
     color: #343d6e;
@@ -194,7 +256,22 @@ body{
 }
 
 .strong-about{
-    color: #ffffffec;
+    position: relative;
+    white-space: nowrap;
+    &:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+    color: #fff;
+  }
 }
 
 .foto-portfolio{
@@ -369,14 +446,19 @@ button:hover .button-text {
     height: 25em;
     padding: 1em 1em 1em 1em;
     border-radius: 1.4em;
-    border: 0.2em solid #e0a9e9;
-    transition: 0.5s;
+    border: 2px solid #e0a9e9;
+    transition: 0.8s;
 }
 
 .logo-services:hover{
     background-color: #e0a9e9;
+    border: 1px solid #fff;
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.logo-services span{
+    font-weight: 600;
 }
 
 .description{
@@ -760,13 +842,13 @@ button:hover .button-text {
       
     .header-menu.active{
         display: flex;
+        margin-top: 2em;
     }
       
     .menu-button{
         display: flex;
         align-items: center;
         justify-content: end;
-        transition: 0.5s;
     }
 
     .header-link{
@@ -785,11 +867,15 @@ button:hover .button-text {
         width: 15em;
     }
 
+    .container-top{
+        margin-top: 9em;
+    }
+
     .container-about{
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: start;
+        text-align: center;
         margin: 5% 7%;
     }
 
@@ -803,12 +889,12 @@ button:hover .button-text {
     }
 
     .text-about h2{
-        font-size: 3rem;
+        font-size: 1.6rem;
         margin: 0;
     }
 
     .text-about p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin: 0;
     }
 
@@ -817,7 +903,7 @@ button:hover .button-text {
     }
     
     .container-mid h1{
-        width: 80%;
+        width: 100%;
         margin-bottom: 20%;
         font-size: 2.5rem;
     }
@@ -842,12 +928,15 @@ button:hover .button-text {
 
     .project{
         width: 25%;
-        height: 15em;
+    }
+
+    .container-fot{
+        overflow-y: hidden;
     }
 
     .container-contact{
-        margin: 1em;
         flex-direction: column;
+        margin: 1em;
     }
     
     .container-form{
@@ -858,7 +947,7 @@ button:hover .button-text {
     .form input,
     .form textarea,
     .form button {
-    width: 100%;
+        width: 100%;
     }
 
     .btn-home{

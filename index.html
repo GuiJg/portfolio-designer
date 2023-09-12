@@ -13,9 +13,12 @@
         <a href="index.html" class="logo-content">
             <img src="assets/LOGO VERTICAL BRANCO.png" alt="Logo da designer Cynthia dos santos" class="logo">
         </a>
-        <button class="menu-button">
-            <img src="assets/3-lines.png" alt="três linhas representando o menu do cabeçalho" class="img-3lines">
-        </button>
+        <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <label class="icon-menu" for="check-icon">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+        </label>
     </div>
     <nav class="header-menu">
         <a href="#about" class="header-link">Sobre</a>
@@ -34,8 +37,7 @@
             <div class="text-about">
                 <h2>
                     O branding que 
-                    <strong class="strong-about">destaca</strong> sua empresa em relação 
-                    <strong class="strong-about">às demais</strong>
+                    <strong class="strong-about">destaca sua empresa</strong> em relação às demais
                 </h2>
                 <p>
                     O branding pode fazer a diferença e diferenciar sua empresa das demais!
@@ -102,7 +104,7 @@
             </div>
             <div class="project">
                 <div class="container-image-project">
-                    <img src="assets/aire-logo.jpg" alt="logomarca do projeto aire" class="image-project">
+                    <img src="assets/aire-logo.jpg" alt="logomarca do projeto aire" class="image-project1" style="width: 100%;">
                 </div>
                 <div class="text-project">
                     <h3>AIRE SKIN</h3>
@@ -119,7 +121,7 @@
         
             <div class="project">
                 <div class="container-image-project">
-                    <img src="assets/docenique-logo.jpg" alt="logomarca do projeto docenique" class="image-project">
+                    <img src="assets/docenique-logo.jpg" alt="logomarca do projeto docenique" class="image-project1" style="width: 100%;">
                 </div>
                 <div class="text-project">
                     <h3>DOCENIQUE</h3>
@@ -217,15 +219,17 @@
                 <a href="#inicio"><img src="assets/LOGO HORIZONTAL BRANCA.png" alt="Logo da designer Cynthia dos santos" class="logo-horizontal"></a>
             </div>
             <div class="container-form">
-                <form action="https://formsubmit.co/cynthia.spaulaa@gmail.com" method="POST" class="form">
+                <form action="https://api.staticforms.xyz/submit" method="POST" class="form">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
-                    <input type="hidden" name="_next" value="https://guijg.github.io/portfolio-designer/#contact">
                     <label for="message">Mensagem</label>
                     <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
                     <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="56ad90db-d598-42a1-b00e-e223dccb494e">
+                    <input type="hidden" name="redirectTo" value="cynthiadesigns.vercel.app/obrigado.html">
                 </form>
             </div>
         </div>
@@ -252,6 +256,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <!--  vlibras plugin -->
-    <script src="script.js"></script> 
+    <script src="main.js"></script> 
 </body>
 </html>

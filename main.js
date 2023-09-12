@@ -1,3 +1,4 @@
+document.querySelector('.btn-home').style.opacity = '0'
 window.addEventListener('scroll', function(){
 
   const button = document.querySelector('.btn');
@@ -10,7 +11,7 @@ window.addEventListener('scroll', function(){
   }
 });
 
-const menuButton = document.querySelector('.menu-button');
+const menuButton = document.querySelector('.check-icon');
 const headerMenu = document.querySelector('.header-menu');
 
   menuButton.addEventListener('click', function() {
