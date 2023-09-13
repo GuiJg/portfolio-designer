@@ -134,6 +134,9 @@ body{
     height: 3px;
 }
   
+.icon-menu{
+    display: none;
+}
   
 .check-icon:checked + .icon-menu > .bar--1{
     transition: top 200ms, transform 200ms 100ms;
@@ -271,6 +274,10 @@ body{
     text-decoration: none;
     color: #000;
     font-weight: 600;
+}
+
+.baseboard-link:hover{
+    text-decoration: underline;
 }
 
 @media(max-width: 700px){

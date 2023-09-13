@@ -180,7 +180,10 @@ body{
     transition: bottom 200ms 100ms, transform 100ms;
     height: 3px;
 }
-  
+ 
+.icon-menu{
+    display: none;
+}
   
 .check-icon:checked + .icon-menu > .bar--1{
     transition: top 200ms, transform 200ms 100ms;
@@ -825,6 +828,11 @@ button:hover .button-text {
     text-decoration: none;
     font-weight: 600;
     color: #000;
+    transition: 0.5s;
+}
+
+.baseboard-link:hover{
+    text-decoration: underline;
 }
 
 @media(max-width: 700px){
