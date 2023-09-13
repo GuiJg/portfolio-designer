@@ -107,3 +107,16 @@ section p{
 .border-el-btn:hover span:nth-child(4) {
     width: 100%;
 }
+
+@media(max-width: 700px) {
+
+    section{
+        text-align: center;
+        margin-top: 65%;
+    }
+
+    .border-el-btn{
+        margin-top: 10%;
+        width: 70%;
+    }
+}
