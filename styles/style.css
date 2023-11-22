@@ -23,17 +23,17 @@ body{
 }
 
 ::-webkit-scrollbar{
-    background-color: #faf0ff;
+    background-color: #1a1a1a;
     width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb{
     border-radius: 0.2em;
-    background: #da8aff;
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #d579ff;
+    background: #d1d1d1;
 }
 
 #services, #projects, #contact, #title{
