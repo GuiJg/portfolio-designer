@@ -18,8 +18,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #fff, #fff , #faf0ff, #faf0ff
-    , #e09bff);
+    background: linear-gradient(to top, #fff
+    , #885E4B);
 }
 
 ::-webkit-scrollbar{
@@ -66,7 +66,7 @@ body{
     justify-content: space-evenly;
     position: fixed;
     backdrop-filter: blur(0.5em);
-    background-color: #3f4a85a9; 
+    background-color: #885E4B; 
     z-index: 9;
     gap: 38em;
     top: 0;
@@ -222,7 +222,7 @@ body{
     display: flex;
     justify-content: start;
     width: 50%;
-    border-bottom: 0.2em solid #e0a9e9;
+    border-bottom: 0.2em solid #F7f7f7ff;
 }
 
 .container-about{
@@ -248,14 +248,14 @@ body{
     height: 4em;
     font-size: 3.5rem;
     font-weight: 600;
-    color: #343d6e;
+    color: #F7f7f7ff;
 }
 
 .text-about p{
     font-size: 1.1rem;
     font-weight: 400;
     margin-right: 11%;
-    color: #343d6e;
+    color: #F7f7f7ff;
 }
 
 .strong-about{
@@ -316,7 +316,7 @@ button.learn-more .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #343d6e;
+    background: #F7f7f7ff;
     border-radius: 1.625rem;
 }
    
@@ -326,7 +326,7 @@ button.learn-more .circle .icon {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #fff;
+    background: #1a1a1a;
 }
    
 button.learn-more .circle .icon.arrow {
@@ -345,8 +345,8 @@ button.learn-more .circle .icon.arrow::before {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    border-top: 0.125rem solid #1a1a1a;
+    border-right: 0.125rem solid #1a1a1a;
     transform: rotate(45deg);
 }
    
@@ -359,7 +359,7 @@ button.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #343d6e;
+    color: #F7f7f7ff;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -371,12 +371,12 @@ button:hover .circle {
 }
    
 button:hover .circle .icon.arrow {
-    background: #fff;
+    background: #1a1a1a;
     transform: translate(1rem, 0);
 }
    
 button:hover .button-text {
-    color: #fff;
+    color: #1a1a1a;
 }
 
 .division{
@@ -384,11 +384,11 @@ button:hover .button-text {
     justify-content: space-evenly;
     align-items: center;
     height: 20em;
-    background-color: #d068ff;
+    background-color: #F7f7f7ff;
 }
 
 .division h1{
-    color: #fff;
+    color: #252525;
     padding: 0.1em;
     font-size: 3.5rem;
 }
@@ -409,8 +409,8 @@ button:hover .button-text {
 }
 
 .container-mid h1{
-    border-bottom: 0.2rem solid #e0a9e9;
-    color: #e383f1;
+    border-bottom: 0.2rem solid #F7f7f7ff;
+    color: #F7f7f7ff;
     font-size: 3rem;
     width: 50%;
     margin-bottom: 3%;
@@ -421,7 +421,7 @@ button:hover .button-text {
     justify-content: center;
     width: 60%;
     margin-left: 40em;
-    border-bottom: 0.2em solid #e0a9e9;
+    border-bottom: 0.2em solid #F7f7f7ff;
 }
 
 .container-services{
@@ -449,12 +449,12 @@ button:hover .button-text {
     height: 25em;
     padding: 1em 1em 1em 1em;
     border-radius: 1.4em;
-    border: 2px solid #e0a9e9;
+    border: 2px solid #1a1a1a;
     transition: 0.8s;
 }
 
 .logo-services:hover{
-    background-color: #e0a9e9;
+    background-color: #885E4B;
     border: 1px solid #fff;
     color: #fff;
     transform: scale(1.05);
@@ -474,7 +474,7 @@ button:hover .button-text {
     padding-left: 1em;
     width: 15em;
     transition: 0.5s;
-    color: #3f4a85;
+    color: #1a1a1a;
 }
 
 .image-services{
@@ -492,7 +492,7 @@ button:hover .button-text {
 .logo-services span{
     transition: 0.5s;
     font-size: 1.5rem;
-    color: #3f4a85;
+    color: #1a1a1a;
 }
 
 .logo-services:hover span{
@@ -504,7 +504,6 @@ button:hover .button-text {
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
-    background-image: url(../assets/background-project.svg);
 }
 
 .container-projects{
@@ -535,8 +534,8 @@ button:hover .button-text {
 
 .border-project{
     width: 10em;
-    border-top: 0.1em solid #e0a9e9;
-    color: #f0ceff;
+    border-top: 0.1em solid #F7f7f7ff;
+    color: #1a1a1a;
 }
 
 .text-title-project{
@@ -617,7 +616,7 @@ button:hover .button-text {
     width: 8em;
     height: 3em;  
     transition: 0.5s;
-    background-color: #d068ff;
+    background-color: #9E6E57;
 }
 
 .button-content{
@@ -649,12 +648,12 @@ button:hover .button-text {
     transform: scaleX(0);
     transform-origin: 0 50%;
     width: 100%;
-    background: linear-gradient(to left, #c546ff, #b513ff, #9900df);
+    background: linear-gradient(to left, #885E4B, #724F3F, #5C4033);
     transition: all 0.5s;
 }
 
 .container-fot{
-    background: linear-gradient(to top, #e0a9e9, #6470b5 ,#3f4a85, #343d6e);
+    background: linear-gradient(to top, #885E4B, #885E4B , #e6e6e6ff);
 }
 
 .container-contact{
@@ -745,7 +744,7 @@ button:hover .button-text {
 .form textarea:focus{
     outline: none;
     filter: brightness(90%);
-    box-shadow: 0.1em 0.1em 0.1em 0.1em var(--color-3);
+    box-shadow: 0.1em 0.1em 0.1em 0.1em #4d4d4d;
 }
 
 .form button{
@@ -764,13 +763,13 @@ button:hover .button-text {
 }
 
 .form button:hover{
-    border: 0.1em solid #343d6e;
-    background: #343d6e;
+    border: 0.1em solid #F7f7f7ff;
+    background: #F7f7f7ff;
+    color: #000;
 }
 
 .formu{
     font-size: 3rem;
-    color: var(--cor-secundaria);
     margin-bottom: 2rem;
     line-height: 1.2;
     text-align: center;
@@ -806,7 +805,6 @@ button:hover .button-text {
 .btn:hover{
     background-color: #d579ff;
     scale: 1.1;
-    /* box-shadow: 0.1em 0.1em 0.1em 0.1em ; */
     box-shadow: inset 1em 0.5em #d579ff;
 }
 
@@ -821,7 +819,7 @@ button:hover .button-text {
     width: 100%;
     padding: 1.5em;
     gap: 0.3em;
-    background-color: #e0a9e9   ;
+    background-color: #885E4B;
 }
 
 .baseboard-link{
