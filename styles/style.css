@@ -18,8 +18,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #fff
-    , #885E4B);
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar{
@@ -222,7 +221,7 @@ body{
     display: flex;
     justify-content: start;
     width: 50%;
-    border-bottom: 0.2em solid #F7f7f7ff;
+    border-bottom: 0.2em solid #1a1a1a;
 }
 
 .container-about{
@@ -248,14 +247,14 @@ body{
     height: 4em;
     font-size: 3.5rem;
     font-weight: 600;
-    color: #F7f7f7ff;
+    color: #1a1a1a;
 }
 
 .text-about p{
     font-size: 1.1rem;
     font-weight: 400;
     margin-right: 11%;
-    color: #F7f7f7ff;
+    color: #1a1a1a;
 }
 
 .strong-about{
@@ -279,7 +278,7 @@ body{
 
 .foto-portfolio{
     display: flex;
-    border: 0.5em solid #fff;
+    border: 0.5em solid #885E4B;
     border-radius: 20em;
     margin-right: 2em;
     width: 80em;
@@ -316,7 +315,7 @@ button.learn-more .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #F7f7f7ff;
+    background: #1a1a1a;
     border-radius: 1.625rem;
 }
    
@@ -326,7 +325,7 @@ button.learn-more .circle .icon {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #1a1a1a;
+    background: #f7f7f7;
 }
    
 button.learn-more .circle .icon.arrow {
@@ -345,8 +344,8 @@ button.learn-more .circle .icon.arrow::before {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #1a1a1a;
-    border-right: 0.125rem solid #1a1a1a;
+    border-top: 0.125rem solid #f7f7f7;
+    border-right: 0.125rem solid #f7f7f7;
     transform: rotate(45deg);
 }
    
@@ -359,7 +358,7 @@ button.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #F7f7f7ff;
+    color: #1a1a1a;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -371,12 +370,12 @@ button:hover .circle {
 }
    
 button:hover .circle .icon.arrow {
-    background: #1a1a1a;
+    background: #f7f7f7;
     transform: translate(1rem, 0);
 }
    
 button:hover .button-text {
-    color: #1a1a1a;
+    color: #f7f7f7;
 }
 
 .division{
@@ -384,11 +383,11 @@ button:hover .button-text {
     justify-content: space-evenly;
     align-items: center;
     height: 20em;
-    background-color: #F7f7f7ff;
+    background-color: #885E4B;
 }
 
 .division h1{
-    color: #252525;
+    color: #f7f7f7;
     padding: 0.1em;
     font-size: 3.5rem;
 }
@@ -409,19 +408,11 @@ button:hover .button-text {
 }
 
 .container-mid h1{
-    border-bottom: 0.2rem solid #F7f7f7ff;
-    color: #F7f7f7ff;
+    border-bottom: 0.2rem solid #1a1a1a;
+    color: #1a1a1a;
     font-size: 3rem;
     width: 50%;
     margin-bottom: 3%;
-}
-
-.border-mid{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin-left: 40em;
-    border-bottom: 0.2em solid #F7f7f7ff;
 }
 
 .container-services{
@@ -522,7 +513,7 @@ button:hover .button-text {
     overflow-y: hidden;
     cursor: pointer;
     border-radius: 0.2em;
-    border: 0.4em solid #fff;
+    border: 0.4em solid #885E4B;
     height: 20em;
     width: 22em;
     transition: 0.5s;
@@ -534,7 +525,7 @@ button:hover .button-text {
 
 .border-project{
     width: 10em;
-    border-top: 0.1em solid #F7f7f7ff;
+    border-top: 0.1em solid #1a1a1a;
     color: #1a1a1a;
 }
 
@@ -543,7 +534,7 @@ button:hover .button-text {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    color: #fff;
+    color: #1a1a1a;
     margin-top: 4em;
     font-size: 3rem;
 }
@@ -557,7 +548,7 @@ button:hover .button-text {
     padding: 1em;
     opacity: 0;
     transition: opacity 0.3s;
-    color: #fff;
+    color: #1a1a1a;
 }
 
 .text-project h3{
