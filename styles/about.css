@@ -10,21 +10,21 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #fff, #fff , #e09bff, #e09bff, #e09bff);
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar{
-    background-color: #faf0ff;
+    background-color: #1a1a1a;
     width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb{
     border-radius: 0.2em;
-    background: #da8aff;
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #d579ff;
+    background: #d1d1d1;
 }
 
 .header{
@@ -32,7 +32,7 @@ body{
     justify-content: space-evenly;
     position: fixed;
     backdrop-filter: blur(0.5em);
-    background-color: #3f4a85a9; 
+    background-color: #885E4B; 
     z-index: 9;
     gap: 38em;
     top: 0;
@@ -187,7 +187,7 @@ body{
     font-family: 'Futura', sans-serif;
     font-weight: 600;
     font-size: 3.5rem;
-    color: #343d6e;
+    color: #1a1a1a;
     margin-right: 3%;
 }
 
@@ -195,12 +195,12 @@ body{
     font-size: 1.1rem;
     font-weight: 400;
     margin-right: 20%;
-    color: #343d6e;
+    color: #1a1a1a;
 }
 
 .strong-about{
     font-weight: 600;
-    color: #343d6e;
+    color: #1a1a1a;
 }
 
 .foto-portfolio{
@@ -213,7 +213,7 @@ body{
 }
 
 .foto{
-    border: 0.5em solid #fff;
+    border: 0.3em solid #885E4B;
     position: block;
     width: 100%;
     border-radius: 20em;
@@ -267,12 +267,12 @@ body{
     width: 100%;
     padding: 1.5em;
     gap: 0.3em;
-    background-color: #e0a9e9;
+    background-color: #885E4B;
 }
 
 .baseboard-link{
     text-decoration: none;
-    color: #000;
+    color: #1a1a1a;
     font-weight: 600;
 }
 

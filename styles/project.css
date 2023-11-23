@@ -8,32 +8,23 @@
     scroll-behavior: smooth;
 }
 
-:root{
-    --color-1: #252B4F;
-    --color-2: #9280B4;
-    --color-3: #E5BFEB;
-    --color-4: #FEE3F5;
-    --color-5: #947EB6; 
-}
-
-
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #343d6e ,#343d6e , #3f4a85, #6470b5);
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar{
-    background-color: #faf0ff;
+    background-color: #1a1a1a;
     width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb{
     border-radius: 0.2em;
-    background: #da8aff;
+    background: #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #d579ff;
+    background: #d1d1d1;
 }
 
 .header{
@@ -41,7 +32,7 @@ body{
     justify-content: space-evenly;
     position: fixed;
     backdrop-filter: blur(0.5em);
-    background-color: #3f4a85a9; 
+    background-color: #885E4B; 
     z-index: 9;
     gap: 38em;
     top: 0;
@@ -188,7 +179,7 @@ body{
 .container-main h2{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #1a1a1a;
     margin: 0.3em;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -209,7 +200,7 @@ body{
     overflow-y: hidden;
     cursor: pointer;
     border-radius: 0.2em;
-    border: 0.4em solid #fff;
+    border: 0.4em solid #885E4B;
     height: 20em;
     width: 22em;
     transition: 0.5s;
@@ -218,13 +209,13 @@ body{
 
 .border-project{
     width: 50%;
-    border-top: 1px solid #e0a9e9;
-    color: #f0ceff;
+    border-top: 1px solid #1a1a1a;
+    color: #1a1a1a;
 }
 
 .text-title-project{
     display: flex;
-    color: #fff;
+    color: #1a1a1a;
     margin-top: 1.5em;
     font-size: 3rem;
 }
@@ -287,7 +278,7 @@ body{
 }
 
 .container-fot{
-    background: linear-gradient(to top, #e0a9e9, #6470b5 ,#3f4a85, #343d6e);
+    background: linear-gradient(to top, #885E4B, #885E4B , #f7f7f7);
 }
 
 .container-contact{
@@ -453,12 +444,12 @@ body{
     width: 100%;
     padding: 1.5em;
     gap: 0.3em;
-    background-color: #e0a9e9;
+    background-color: #885E4B;
 }
 
 .baseboard-link{
     text-decoration: none;
-    color: #000;
+    color: #1a1a1a;
     font-weight: 600;
 }
 

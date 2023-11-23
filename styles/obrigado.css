@@ -9,7 +9,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to top, #faf0ff
-    , #e09bff);
+    , #885E4B);
 }
 
 section{
@@ -21,7 +21,7 @@ section{
 }
 
 section h1,p{
-    color: #343d6e;
+    color: #f7f7f7;
 }
 
 section h1{
@@ -41,8 +41,9 @@ section p{
     outline: none;
     border: none;
     text-decoration: none;
-    color: #343d6e;
+    color: #f7f7f7;
     font-size: 15px;
+    font-weight: 600;
     padding: 1em 2em;
     margin: 3% 1% 1% 1.3%;
     width: 20%;

@@ -8,14 +8,6 @@
     overflow-x: hidden;
 }
 
-:root{
-    --color-1: #252B4F;
-    --color-2: #9280B4;
-    --color-3: #E5BFEB;
-    --color-4: #FEE3F5;
-    --color-5: #947EB6;
-}
-
 body{
     font-family: 'Montserrat', sans-serif;
     background: #f7f7f7;
@@ -111,7 +103,7 @@ body{
 
 .header-link{
     text-decoration: none;
-    color: #fff;
+    color: #f7f7f7;
     font-size: 1.6rem;
     font-weight: 400;
     transition: 0.5s;
@@ -122,7 +114,7 @@ body{
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: #f7f7f7;
     transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
     transform: translateX(-0%);
 }
@@ -154,7 +146,7 @@ body{
     height: var(--height-bar);
     width: 100%;
     border-radius: .5rem;
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
   
   
@@ -272,7 +264,7 @@ body{
     background-size: auto 100%;
     background-repeat: round;
     background-position: 0em;
-    color: #fff;
+    color: #f7f7f7;
   }
 }
 
@@ -446,8 +438,8 @@ button:hover .button-text {
 
 .logo-services:hover{
     background-color: #885E4B;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #f7f7f7;
+    color: #f7f7f7;
     transform: scale(1.05);
 }
 
@@ -477,7 +469,7 @@ button:hover .button-text {
 .logo-services:hover .image-services,
 .logo-services:hover .description{
     filter: brightness(100%);
-    color: #fff;
+    color: #f7f7f7;
 }
 
 .logo-services span{
@@ -487,7 +479,7 @@ button:hover .button-text {
 }
 
 .logo-services:hover span{
-    color: #fff;
+    color: #f7f7f7;
 }
 
 .container-bottom{
@@ -593,7 +585,7 @@ button:hover .button-text {
 .text-project h3{
     font-family: 'Futura', sans-serif;
     font-size: 1.2rem;
-    color: #fff;
+    color: #f7f7f7;
 }
 
 .button-project{
@@ -616,7 +608,7 @@ button:hover .button-text {
     justify-content: center;
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: #f7f7f7;
     width: 8em;
     height: 3em;  
 }
@@ -644,7 +636,7 @@ button:hover .button-text {
 }
 
 .container-fot{
-    background: linear-gradient(to top, #885E4B, #885E4B , #e6e6e6ff);
+    background: linear-gradient(to top, #885E4B, #885E4B , #f7f7f7);
 }
 
 .container-contact{
@@ -659,7 +651,7 @@ button:hover .button-text {
 .text-media{
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #f7f7f7;
     gap: 1em;
 }
 
@@ -707,7 +699,7 @@ button:hover .button-text {
 }
 
 .form label{
-    color: #fff;
+    color: #f7f7f7;
     line-height: 1;
 }
 
@@ -744,7 +736,7 @@ button:hover .button-text {
     background: transparent;   
     text-transform: uppercase;   
     cursor: pointer;
-    color: #fff;
+    color: #f7f7f7;
     border: 0.1em solid ;
     border-radius: 2em;
     padding: 1em;
