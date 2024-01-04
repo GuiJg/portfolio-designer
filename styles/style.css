@@ -12,7 +12,7 @@ body {
 }
 
 ::-webkit-scrollbar{
-    
+    width: 15px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -25,7 +25,7 @@ body {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: transparent;
+    background-color: #1E1E1E;
 }
 
 header {
