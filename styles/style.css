@@ -320,6 +320,7 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: relative;
     border: 1px solid #fff;
     cursor: pointer;
     width: 30%;
@@ -334,9 +335,9 @@ header {
     transition: 0.5s;
 }
 
-.item-project:hover .project-image {
+.item-project:hover .project-image{
     background: #1E1E1E;
-    filter: blur(3px);
+    filter: brightness(50%);
     scale: 1.02;
 }
 
@@ -345,6 +346,11 @@ header {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    transition: 0.5s;
+}
+
+.item-project:hover .project-image img{
+    filter: blur(3px);
 }
 
 .project-text {
@@ -352,6 +358,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
+    opacity: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -365,7 +372,7 @@ header {
 }
 
 .item-project:hover .project-text {
-    display: flex;
+    opacity: 1;
 }
 
 footer {
