@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
 
-    header{
+    header {
         flex-direction: column;
         padding: 2% 0% 2% 10%;
     }
@@ -28,7 +28,7 @@
         overflow: hidden;
     }
 
-    .hamburger svg{
+    .hamburger svg {
         width: 200px;
         height: 50px;
     }
@@ -52,7 +52,7 @@
         gap: 10px;
     }
 
-    #svg{
+    #svg {
         display: none;
     }
 
@@ -60,7 +60,7 @@
         height: 36rem;
     }
 
-    .banner-text{
+    .banner-text {
         padding-right: 10%;
     }
 
@@ -85,34 +85,34 @@
         transform: translate(2.5%, -50%);
     }
 
-    .services-page{
+    .services-page {
         padding-top: 25%;
     }
 
-    .services-container{
+    .services-container {
         flex-direction: column;
     }
 
-    .item-services{
+    .item-services {
         width: 70%;
         height: 150px;
     }
 
-    .btn a{
+    .btn a {
         width: 800px;
         padding: 5.2% 0;
     }
 
-    .project-page{
+    .project-page {
         padding-top: 18%;
     }
 
-    .project-container{
+    .project-container {
         flex-direction: column;
         flex-wrap: nowrap;
     }
 
-    .item-project{
+    .item-project {
         width: 100%;
     }
 
@@ -122,7 +122,7 @@
         gap: 60px;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         margin-top: 250%;
         padding-top: 10%;
