@@ -499,7 +499,7 @@ header {
 .contact-page {
     display: flex;
     flex-direction: column;
-    padding: 0% 10% 0% 10%;
+    padding: 5% 0% 0% 10%;
 }
 
 .title-contact{
@@ -517,7 +517,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     gap: 10px ;
     margin: 2%;
 }
