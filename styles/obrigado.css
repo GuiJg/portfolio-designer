@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, #faf0ff
-    , #885E4B);
+    font-family: 'Jost', sans-serif;
+    background-image: url(/assets/background-obrigado.png);
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section{
@@ -32,80 +35,55 @@ section p{
     font-size: 1.3rem;
 }
 
-.border-el-btn {
+.btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-    background: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    color: #f7f7f7;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 1em 2em;
-    margin: 3% 1% 1% 1.3%;
-    width: 20%;
-    transition: 0.8s;
-}
-  
-.border-el-btn:active {
-    transform: scale(.98);
-}
-
-.border-el-btn:hover{
-    background-color: #343d6e;
-    color: #fff;
-}
-  
-.border-el-btn span {
-    position: absolute;
-    background: #fff;
-    transition: .5s;
-}
-  
-.border-el-btn span:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 30%;
-}
-  
-.border-el-btn:hover span:nth-child(1) {
-    height: 100%;
-}
-  
-.border-el-btn span:nth-child(2) {
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 2px;
-}
-  
-.border-el-btn:hover span:nth-child(2) {
+    margin-top: 3%;
     width: 100%;
 }
-  
-.border-el-btn span:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    width: 2px;
-    height: 30%;
+
+.btn a {
+    position: relative;
+    z-index: 2;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    width: 70%;
+    padding: 1.2% 0;
+    transition: 0.3s;
 }
-  
-.border-el-btn:hover span:nth-child(3) {
+
+.btn a span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
     height: 100%;
+    background: #fff;
+    transition: all 0.3s;
+    z-index: 1;
 }
-  
-.border-el-btn span:nth-child(4) {
-    bottom: 0;
-    right: 0; 
-    width: 15%;
-    height: 2px;
+
+.btn a:hover {
+    color: #000;
 }
-  
-.border-el-btn:hover span:nth-child(4) {
+
+.btn a:hover:after {
+    width: 100%;
+}
+
+.div-button {
+    border: 1px solid #fff;
     width: 100%;
 }
 
@@ -116,7 +94,7 @@ section p{
         margin-top: 65%;
     }
 
-    .border-el-btn{
+    .btn{
         margin-top: 10%;
         width: 70%;
     }
