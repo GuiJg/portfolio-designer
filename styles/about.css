@@ -47,6 +47,18 @@ header {
     backdrop-filter: blur(5px);
 }
 
+#svg path {
+    fill: #fff;
+}
+
+#svg1 path {
+    stroke: #fff;
+}
+
+.header-text {
+    color: #ffff;
+}
+
 .navbar-mobile {
     width: 15%;
 }
@@ -164,14 +176,14 @@ header {
     background-color: #1E1E1E;
 }
 
-.div-text{
+.div-text {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
 }
 
-.border{
+.border {
     background-color: #1E1E1E;
     width: 1em;
     height: 19.2em;
