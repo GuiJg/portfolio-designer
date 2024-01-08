@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const header = document.getElementById("header-cynthia");
+    const header = document.getElementById("header-services");
 
     // Função para aplicar as alterações no estilo
     function applyStyles(isScrolled) {
