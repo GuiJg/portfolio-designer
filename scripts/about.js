@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const header = document.getElementById("header-services");
+    const header = document.getElementById("header-about");
 
     // Função para aplicar as alterações no estilo
     function applyStyles(isScrolled) {
@@ -42,4 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
             applyStyles(false);
         }
     });
+});
+
+//scroll do header transparente 
+const menu = document.getElementById("header-about"); 
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 0) {
+        menu.classList.add("header-scroll");
+        for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
+
+        }
+    } else {
+        menu.classList.remove("header-scroll");
+        for (let i = 0; i < document.querySelectorAll(".header-link").length; i++) {
+
+        }
+    }
 });
