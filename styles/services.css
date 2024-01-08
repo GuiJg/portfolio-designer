@@ -142,6 +142,59 @@ header {
     transition: 0.5s;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12% 5% 0% 5%;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title h1 {
+    color: #000;
+    text-align: center;
+    font-size: 42.464px;
+    font-weight: 400;
+}
+
+.main-title p {
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 70%;
+}
+
+.underline {
+    background-color: #1E1E1E;
+    margin-top: 1.5%;
+    width: 30em;
+    height: 1px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.item-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
 .btn {
     display: flex;
     justify-content: center;
