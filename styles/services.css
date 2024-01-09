@@ -216,7 +216,12 @@ main {
 .image span {
     color: #FFF;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
+}
+
+.image svg {
+    width: 70%;
+    height: auto;
 }
 
 .text {
@@ -232,7 +237,7 @@ main {
     font-size: 1rem;
 }
 
-.div-brown{
+.div-brown {
     position: absolute;
     width: 100%;
     height: 50%;
@@ -312,7 +317,7 @@ footer {
     height: auto;
 }
 
-.medias-footer{
+.medias-footer {
     display: flex;
     justify-content: center;
     align-items: center;

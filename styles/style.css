@@ -227,11 +227,17 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 3.5% 0% 3.5% 0%;
     gap: 20px;
     width: 15%;
     background-color: #fff;
+    box-shadow: 5px 5px 1px 3px #00000053;
+    transition: 0.5s;
+}
+
+.item-services svg{
+    width: 40%;
+    height: auto;
 }
 
 .item-services p {
