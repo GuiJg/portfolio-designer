@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
             path.style.stroke = isScrolled ? "white" : "black";
         });
 
+        //hamburger menu navbar color "line"
+        document.querySelectorAll(".line").forEach(function (path) {
+            path.style.stroke = isScrolled ? "white" : "black"
+        })
+
         // Altera a imagem do logo
         document.querySelector(".header-logo img").src = isScrolled ? "assets/Cynthia Designer branco.png" : "assets/Cynthia Designer.png";
     }

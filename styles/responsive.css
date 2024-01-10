@@ -2,7 +2,7 @@
 
     header {
         flex-direction: column;
-        padding: 2% 0% 2% 10%;
+        padding: 2%;
     }
 
     header.active {
@@ -91,6 +91,7 @@
 
     .services-container {
         flex-direction: column;
+        padding-bottom: 9%;
     }
 
     .item-services {
@@ -105,15 +106,51 @@
 
     .project-page {
         padding-top: 18%;
+        padding-bottom: 15%;
     }
 
     .project-container {
         flex-direction: column;
         flex-wrap: nowrap;
+        padding-bottom: 15%;
     }
 
     .item-project {
         width: 100%;
+    }
+
+    .icon-middle img{
+        width: 50%;
+    }
+
+    .text-middle{
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 15%;
+        padding-top: 15%;
+    }
+
+    .div-button{
+        width: 50%;
+    }
+
+    .cards-container{
+        flex-wrap: wrap;
+        padding-bottom: 70%;
+    }
+
+    .frase-cards{
+        width: 100%;
+    }
+
+    .frase-cards p{
+        width: 80%;
+        margin-bottom: 20%;
+    }
+
+    .div-middle{
+        display: none;
     }
 
     .contact-page {
@@ -122,12 +159,127 @@
         gap: 60px;
     }
 
+    .title-contact{
+        width: 100%;
+    }
+
+    .form button{
+        width: 50%;
+        padding: 3%;
+    }
+
+    .form input,
+    .form textarea{
+        padding: 4%;
+    }
+
     footer {
         flex-direction: column;
-        margin-top: 250%;
-        padding-top: 10%;
+        margin-top: 10%;
+        padding-top: 5%;
         padding-bottom: 5%;
         gap: 20px;
+    }
+
+}
+
+/* responsividade page about */ 
+@media (max-width: 1000px) {
+
+    .main-about{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0% 0% 10% 0%;
+        background-color: #1e1e1e;
+    }
+
+    .text-about{
+        position: relative;
+        transform: translate(0);
+        width: 100%;
+    }
+
+    .text-about p{
+        padding: 8% 7% 5% 5%;
+    }
+
+    .border{
+        display: none;
+    }
+
+    .image-about{
+        width: 80em;    
+    }
+
+    .image-about img{
+        width: 100%;
+        height: auto;
+    }
+
+    #btn-about a{
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    #btn-about a:after{
+        background-color: #fff;
+    }
+
+    #btn-about a:hover{
+        color: #000;
+    }
+
+    #frase-about{
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transform: translate(0);
+    }
+
+    #frase-about p{
+        width: 100%;
+    }
+}
+
+/* responsividade service page */
+
+@media (max-width: 1000px) {
+
+    .main-section{
+        margin-top: 35%;
+    }
+
+    .main-title h1{
+        font-size: 2rem;
+    }
+
+    .item-services{
+        flex-direction: column;
+        padding: 5% 3% 5% 3%;
+        text-align: center;
+        height: auto;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .image svg{
+        width: 20%;
+    }
+
+}
+
+/* responsividade portfolio page */
+
+@media (max-width: 1000px) {
+
+    .main-title{
+        margin-top: 30%;
+    }
+
+    .underline{
+        width: 100%;
     }
 
 }

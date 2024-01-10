@@ -1,22 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const header = document.getElementById("header-about");
 
     // Função para aplicar as alterações no estilo
     function applyStyles(isScrolled) {
         // Altera a cor dos links
-        document.querySelectorAll(".header-link").forEach(function(link) {
+        document.querySelectorAll(".header-link").forEach(function (link) {
             link.style.color = isScrolled ? "white" : "black";
         });
 
         // SVG com ID "svg"
-        document.querySelectorAll("#svg path").forEach(function(path) {
+        document.querySelectorAll("#svg path").forEach(function (path) {
             path.style.fill = isScrolled ? "white" : "black";
         });
 
         // SVG com ID "svg1"
-        document.querySelectorAll("#svg1 path").forEach(function(path) {
+        document.querySelectorAll("#svg1 path").forEach(function (path) {
             path.style.stroke = isScrolled ? "white" : "black";
         });
+
+        //hamburger menu navbar color "line"
+        document.querySelectorAll(".line").forEach(function (path) {
+            path.style.stroke = isScrolled ? "white" : "black"
+        })
 
         // Altera a imagem do logo
         document.querySelector(".header-logo img").src = isScrolled ? "assets/Cynthia Designer branco.png" : "assets/Cynthia Designer.png";
@@ -26,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     applyStyles(false);
 
     // Adiciona um ouvinte de evento de rolagem (scroll)
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         // Obtém a posição atual de rolagem
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
@@ -45,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //scroll do header transparente 
-const menu = document.getElementById("header-about"); 
+const menu = document.getElementById("header-about");
 window.addEventListener("scroll", function () {
 
     if (window.scrollY > 0) {

@@ -198,7 +198,7 @@ main {
     height: 14em;
     padding: 1% 2% 1% 2%;
     overflow: hidden;
-    position: relative;
+    z-index: 1;
     background-color: #1E1E1E;
     box-shadow: 5px 10px 10px -5px #1e1e1e83;
     color: #fff;
