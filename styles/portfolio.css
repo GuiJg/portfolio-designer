@@ -162,7 +162,7 @@ header {
     position: relative;
     text-align: center;
     font-family: 'Anton', sans-serif;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 500;
     color: #fff;
 }
@@ -175,6 +175,9 @@ header {
 }
 
 .main-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
     margin: 5%;
 }
 
