@@ -1,3 +1,4 @@
+/* responsivo do home */
 @media (max-width: 1000px) {
 
     header {
@@ -90,7 +91,7 @@
     }
 
     .services-container {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
         padding-bottom: 9%;
     }
 
@@ -110,8 +111,7 @@
     }
 
     .project-container {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        grid-template-columns: repeat(2, 1fr);
         padding-bottom: 15%;
     }
 
@@ -180,7 +180,18 @@
         padding-bottom: 5%;
         gap: 20px;
     }
+}
 
+@media (max-width: 735px) {
+
+    .services-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 15%;
+    }
 }
 
 /* responsividade page about */ 
@@ -274,12 +285,30 @@
 
 @media (max-width: 1000px) {
 
+    #header-portfolio.active {
+        background-color: #ffffff10;
+        box-shadow: 1px 1px 10px 1px #00000038;
+        backdrop-filter: blur(5px);
+    }
+
+    .menu.active{
+        color: #000;
+    }
+
     .main-title{
         margin-top: 30%;
     }
 
-    .underline{
-        width: 100%;
+    .main-projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .main-projects{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
