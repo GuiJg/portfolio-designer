@@ -65,3 +65,25 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+
+// Encontre o botão e a janela modal
+const btn = document.querySelector('.btn a');
+const modal = document.getElementById('myModal');
+
+// Quando o usuário clicar no botão, exiba a janela modal
+btn.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+// Quando o usuário clicar no botão de fechar, oculte a janela modal
+const closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// Quando o usuário clicar fora da janela modal, também a oculte
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
