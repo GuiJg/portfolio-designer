@@ -354,13 +354,34 @@ a {
 }
 
 .modal-content {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     background-color: #fff;
+    box-shadow: 5px 5px 10px 1px #00000074;
     padding: 20px;
-    border-radius: 5px;
+}
+
+.image-modal {
+    flex: 1;
+    width: 70rem;
+}
+
+.image-modal img {
+    max-width: 100%;
+}
+
+.title-paragraph {
+    flex: 1;
+    padding: 0% 3% 0% 3%;
+}
+
+.title-paragraph h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1%;
 }
 
 .close {
@@ -369,6 +390,29 @@ a {
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.software{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 15%;
+    margin-top: 30%;
+}
+
+.software svg{
+    width: 100%;
+    height: auto;
+}
+
+.title-software p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.image-software {
+    display: flex;
+    gap: 10px;
 }
 
 footer {

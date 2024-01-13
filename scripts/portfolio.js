@@ -66,24 +66,41 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Encontre o botão e a janela modal
-const btn = document.querySelector('.btn a');
-const modal = document.getElementById('myModal');
+// Encontre todos os botões com a classe 'btn'
+const btns = document.querySelectorAll('.btn a');
 
-// Quando o usuário clicar no botão, exiba a janela modal
-btn.addEventListener('click', function() {
-  modal.style.display = 'block';
+// Adicione um evento de clique a cada botão
+btns.forEach(function(btn) {
+  btn.addEventListener('click', function(event) {
+    // Prevenir o comportamento padrão do link para evitar que a página seja recarregada
+    event.preventDefault();
+
+    // Recupere o ID da janela modal diretamente do href
+    const modalId = btn.getAttribute('href').substring(1);
+
+    // Encontre a janela modal correspondente usando o ID
+    const modal = document.getElementById(modalId);
+
+    // Exiba a janela modal
+    modal.style.display = 'block';
+  });
 });
 
-// Quando o usuário clicar no botão de fechar, oculte a janela modal
-const closeBtn = document.querySelector('.close');
-closeBtn.addEventListener('click', function() {
-  modal.style.display = 'none';
-});
-
-// Quando o usuário clicar fora da janela modal, também a oculte
-window.addEventListener('click', function(event) {
-  if (event.target === modal) {
+// Adicione os manipuladores de eventos de fechamento para cada janela modal
+const closeBtns = document.querySelectorAll('.modal .close');
+closeBtns.forEach(function(closeBtn) {
+  closeBtn.addEventListener('click', function() {
+    // Encontre a janela modal pai do botão de fechar
+    const modal = closeBtn.closest('.modal');
+    
+    // Oculte a janela modal
     modal.style.display = 'none';
+  });
+});
+
+// Adicione o manipulador de evento para ocultar a janela modal ao clicar fora dela
+window.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
   }
 });
