@@ -104,3 +104,23 @@ window.addEventListener('click', function(event) {
     event.target.style.display = 'none';
   }
 });
+
+//filtro projetos 
+$(document).ready(function () {
+  // Evento de clique para os botões de filtro
+  $('.filter-btn').on('click', function () {
+      const type = $(this).data('type');
+
+      // Oculta todos os projetos
+      $('.item-projects').hide();
+
+      // Mostra apenas os projetos do tipo selecionado
+      $('.' + type).show().addClass('filtered');
+  });
+
+  // Evento de clique para o botão de limpar filtro
+  $('.clear-filter-btn').on('click', function () {
+      // Remova todas as classes de filtro e mostre todos os projetos
+      $('.item-projects').show().removeClass('filtered');
+  });
+});

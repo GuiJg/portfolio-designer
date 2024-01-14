@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="assets/Icon Cynthia Design branco.png" type="image/x-icon">
     <title>Cynthia - Portfólio</title>
 </head>
+
 <body>
     <header class="" id="header-portfolio">
         <div class="navbar-mobile">
@@ -15,7 +17,7 @@
                 <img src="assets/Cynthia Designer branco.png" alt="">
             </a>
             <label class="hamburger">
-                <input type="checkbox">   
+                <input type="checkbox">
                 <svg viewBox="0 0 32 32">
                     <path class="line line-top-bottom"
                         d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
@@ -80,9 +82,23 @@
                 </a>
             </div>
         </div>
+        <div class="container-filters">
+            <button class="filter-btn" data-type="social-media">Social Media</button>
+            <button class="filter-btn" data-type="identidade-visual">Identidade Visual</button>
+            <button class="filter-btn" data-type="logos">Logos</button>
+            <button class="filter-btn" data-type="ilustracao">Ilustração</button>
+            <button class="filter-btn" data-type="design-de-sites">Design de Sites</button>
+            <button class="clear-filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="white"
+                        d="M15 19.88c.04.3-.06.62-.29.83a.996.996 0 0 1-1.41 0L9.29 16.7a.989.989 0 0 1-.29-.83v-5.12L4.21 4.62a1 1 0 0 1 .17-1.4c.19-.14.4-.22.62-.22h14c.22 0 .43.08.62.22a1 1 0 0 1 .17 1.4L15 10.75zM7.04 5L11 10.06v5.52l2 2v-7.53L16.96 5z" />
+                </svg>
+                Limpar Filtro
+            </button>
+        </div>
     </section>
     <section class="main-projects" id="project">
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/aire-hidratante-sabonete-esfoliante.jpg" alt="Logo da Aire">
             </div>
@@ -95,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/scoop-doo-mockup-pote.png" alt="Logo do Scoop Doo">
             </div>
@@ -108,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/qservices-kit.png" alt="Logo da Q services">
             </div>
@@ -121,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/docenique-cartao.jpg" alt="Logo da Docenique">
             </div>
@@ -134,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects design-de-sites">
             <div class="image-project">
                 <img src="assets/terra-viva-computador.png" alt="Logo da Terra Viva">
             </div>
@@ -147,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/tacos-mania-truck.png" alt="Logo da Taco's Mania">
             </div>
@@ -160,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects social-media">
             <div class="image-project">
                 <img src="assets/tulipgarden-instagram.jpg" alt="Logo da Tulip Garden">
             </div>
@@ -173,7 +189,7 @@
                 </div>
             </div>
         </div>
-        <div class="item-projects">
+        <div class="item-projects identidade-visual">
             <div class="image-project">
                 <img src="assets/logo-programador.png" alt="Logo de Elton Santos Programador">
             </div>
@@ -409,7 +425,7 @@
             <div class="image-modal">
                 <img src="assets/tacos-mania-truck.png" alt="Imagem 6 do modal">
             </div>
-            <div class="title-paragraph"> 
+            <div class="title-paragraph">
                 <h2>Taco's Mania</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quod cupiditate porro maxime quaerat
@@ -503,6 +519,7 @@
         </div>
     </div>
     <!-- Fim -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/portfolio.js"></script>
 </body>
