@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
     margin: 0;
@@ -161,7 +161,7 @@ header {
     display: inline-block;
     position: relative;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 7rem;
     font-weight: 500;
     color: #fff;
@@ -378,7 +378,7 @@ a {
     padding: 0% 3% 0% 3%;
 }
 
-.title-paragraph h2{
+.title-paragraph h2 {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1%;
@@ -392,7 +392,7 @@ a {
     cursor: pointer;
 }
 
-.software{
+.software {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -400,12 +400,12 @@ a {
     margin-top: 30%;
 }
 
-.software svg{
+.software svg {
     width: 100%;
     height: auto;
 }
 
-.title-software p{
+.title-software p {
     font-size: 1.1rem;
     font-weight: 500;
 }
