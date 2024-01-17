@@ -182,7 +182,6 @@ header {
     font-size: 2rem;
     font-style: italic;
     font-weight: 400;
-    line-height: normal;
 }
 
 .services-page {
@@ -231,12 +230,13 @@ header {
     padding: 10% 3% 10% 3%;
     gap: 20px;
     width: 100%;
+    height: 100%;
     background-color: #fff;
     box-shadow: 5px 5px 1px 3px #00000053;
     transition: 0.5s;
 }
 
-.item-services svg{
+.item-services svg {
     width: 30%;
     height: auto;
 }
@@ -428,7 +428,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 5%;
-    width: 60%;
+    width: 100%;
 }
 
 .text-middle h2 {
@@ -495,11 +495,11 @@ header {
 
 .frase-cards p {
     color: #fff;
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-size: 2rem;
     font-weight: 300;
-    padding-bottom: 3.5%;
+    margin: 5%;
 }
 
 .contact-page {
@@ -508,7 +508,7 @@ header {
     padding: 5% 0% 0% 10%;
 }
 
-.title-contact{
+.title-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,11 +524,11 @@ header {
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    gap: 10px ;
+    gap: 10px;
     margin: 2%;
 }
 
-.form label{
+.form label {
     color: #1E1E1E;
 }
 
@@ -625,7 +625,7 @@ footer {
     height: auto;
 }
 
-.medias-footer{
+.medias-footer {
     display: flex;
     justify-content: center;
     align-items: center;

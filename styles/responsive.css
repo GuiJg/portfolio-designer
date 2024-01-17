@@ -82,8 +82,14 @@
 
     .frase {
         width: 95%;
-        padding: 2% 1% 2% 1%;
+        padding: 5% 2% 5% 2%;
         transform: translate(2.5%, -50%);
+    }
+
+    .frase p {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 500;
     }
 
     .services-page {
@@ -96,8 +102,8 @@
     }
 
     .item-services {
-        width: 70%;
-        height: 150px;
+        width: 100%;
+        height: auto;
     }
 
     .btn a {
@@ -131,6 +137,10 @@
         padding-top: 15%;
     }
 
+    .text-middle h2 {
+        font-size: 2rem;
+    }
+
     .div-button {
         width: 50%;
     }
@@ -146,7 +156,8 @@
 
     .frase-cards p {
         width: 80%;
-        margin-bottom: 20%;
+        margin: 5% 5% 10% 5%;
+        padding: 0;
     }
 
     .div-middle {
@@ -180,6 +191,16 @@
         padding-bottom: 5%;
         gap: 20px;
     }
+}
+
+@media (max-width: 425px) {
+
+    .frase-cards p {
+        width: 80%;
+        margin: 5% 5% 15% 5%;
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 735px) {
@@ -254,21 +275,50 @@
 
 /* responsividade service page */
 
+@media (max-width: 1440px) {
+
+    .services-container {
+        margin: 5% 0 8% 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .main-services-title p {
+        margin: 3% 0 5% 0;
+    }
+
+    .services-container {
+        margin: 5% 0 15% 0;
+    }
+
+}
+
 @media (max-width: 1000px) {
 
     .main-section {
-        margin-top: 35%;
+        margin-top: 25%;
     }
 
-    .main-title h1 {
+    .main-services-title {
+        padding: 0;
+    }
+
+    .main-services-title h1 {
         font-size: 2rem;
+    }
+
+    .services-container {
+        margin: 5% 5% 5% 5%;
     }
 
     .item-services {
         flex-direction: column;
         padding: 5% 3% 5% 3%;
         text-align: center;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
 
     .image {
@@ -277,6 +327,50 @@
 
     .image svg {
         width: 20%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .item-services {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 735px) {
+    
+    .div-brown{
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .main-services-title {
+        padding: 5%;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .main-services-title {
+        padding: 10% 10% 5% 10%;
+    }
+
+    .main-services-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-services-title p {
+        width: 65%;
     }
 
 }
@@ -300,11 +394,10 @@
     }
 
     .main-title {
-        margin-top: 30%;
-        padding: 30% 0% 30% 0%;
+        padding: 5% 0% 15% 0%;
     }
 
-    .main__action{
+    .main__action {
         margin-top: 10%;
     }
 
