@@ -111,16 +111,25 @@ $(document).ready(function () {
   $('.filter-btn').on('click', function () {
       const type = $(this).data('type');
 
-      // Oculta todos os projetos
-      $('.item-projects').hide();
+      // Oculta todos os projetos instantaneamente, exceto o tipo selecionado
+      $('.item-projects').not('.' + type).hide();
 
-      // Mostra apenas os projetos do tipo selecionado
-      $('.' + type).show().addClass('filtered');
+      // Mostra apenas os projetos do tipo selecionado com uma transição suave
+      $('.' + type).css({
+          'opacity': 0,
+          'margin-top': '20px'  // Ajuste conforme necessário
+      }).show().animate({
+          'opacity': 1,
+          'margin-top': '0'
+      }, 300).addClass('filtered');
   });
 
   // Evento de clique para o botão de limpar filtro
   $('.clear-filter-btn').on('click', function () {
-      // Remova todas as classes de filtro e mostre todos os projetos
-      $('.item-projects').show().removeClass('filtered');
+      // Remova todas as classes de filtro e mostre todos os projetos instantaneamente
+      $('.item-projects').show().animate({
+          'opacity': 1,
+          'margin-top': '0'
+      }, 300).removeClass('filtered');
   });
 });
