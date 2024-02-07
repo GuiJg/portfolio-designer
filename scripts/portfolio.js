@@ -69,7 +69,7 @@ window.addEventListener("scroll", function () {
 // Encontre todos os botões com a classe 'btn'
 const btns = document.querySelectorAll('.btn a');
 
-// Adicione um evento de clique a cada botão
+//evento de clique a cada botão
 btns.forEach(function(btn) {
   btn.addEventListener('click', function(event) {
     // Prevenir o comportamento padrão do link para evitar que a página seja recarregada
@@ -86,14 +86,13 @@ btns.forEach(function(btn) {
   });
 });
 
-// Adicione os manipuladores de eventos de fechamento para cada janela modal
+//manipuladores de eventos de fechamento para cada janela modal
 const closeBtns = document.querySelectorAll('.modal .close');
 closeBtns.forEach(function(closeBtn) {
   closeBtn.addEventListener('click', function() {
-    // Encontre a janela modal pai do botão de fechar
+
     const modal = closeBtn.closest('.modal');
     
-    // Oculte a janela modal
     modal.style.display = 'none';
   });
 });
